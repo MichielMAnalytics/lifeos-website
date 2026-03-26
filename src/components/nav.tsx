@@ -29,10 +29,10 @@ export function Nav() {
 
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="/#features"
+            href="/#use-cases"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
-            Features
+            Use Cases
           </a>
           <a
             href="/#demo"
@@ -45,12 +45,6 @@ export function Nav() {
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
             Pricing
-          </a>
-          <a
-            href="/about"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            About
           </a>
         </div>
 
