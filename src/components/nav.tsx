@@ -1,7 +1,9 @@
 "use client";
 
 import { LogoFull } from "./logo";
+import { buttonVariants } from "./ui/button";
 import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,37 +23,54 @@ export function Nav() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="relative z-10">
+        <a href="/" className="relative z-10">
           <LogoFull />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#features"
-            className="text-sm text-muted hover:text-foreground transition-colors duration-300"
+            href="/#features"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
             Features
           </a>
           <a
-            href="#cli"
-            className="text-sm text-muted hover:text-foreground transition-colors duration-300"
+            href="/#demo"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
-            CLI
+            Demo
           </a>
           <a
-            href="#themes"
-            className="text-sm text-muted hover:text-foreground transition-colors duration-300"
+            href="/#pricing"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
-            Themes
+            Pricing
+          </a>
+          <a
+            href="/about"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+          >
+            About
           </a>
         </div>
 
-        <a
-          href="#get-started"
-          className="text-sm font-medium px-5 py-2 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
-        >
-          Get Started
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="#"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
+          >
+            Account
+          </a>
+          <a
+            href="#get-started"
+            className={cn(
+              buttonVariants({ size: "sm" }),
+              "rounded-lg text-xs uppercase tracking-wider font-medium"
+            )}
+          >
+            Get Started
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -15,12 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LifeOS — Your Personal Life Operating System",
   description:
-    "A single-user productivity platform for managing tasks, goals, projects, journals, day plans, ideas, and more. Dashboard, CLI, and API.",
+    "A personal productivity platform with a configurable AI LifeCoach. Tasks, goals, projects, journals, day plans, and more — with a dashboard, CLI, and API.",
+  metadataBase: new URL("https://lifeos.zone"),
+  icons: {
+    icon: { url: "/favicon.svg", type: "image/svg+xml" },
+  },
   openGraph: {
     title: "LifeOS — Your Personal Life Operating System",
     description:
-      "A single-user productivity platform for managing tasks, goals, projects, journals, day plans, ideas, and more.",
+      "A personal productivity platform with a configurable AI LifeCoach. Dashboard. CLI. API. Built for the way you think.",
+    url: "https://lifeos.zone",
+    siteName: "LifeOS",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LifeOS — Your Personal Life Operating System",
+    description:
+      "A personal productivity platform with a configurable AI LifeCoach. Dashboard. CLI. API.",
   },
 };
 
