@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { LogoFull } from "./logo";
 import { Separator } from "./ui/separator";
 import { FooterExtras } from "./floating-buttons";
@@ -99,7 +100,9 @@ export function Footer() {
           </div>
 
           {/* Bottom row — Partner program, language, currency */}
-          <FooterExtras />
+          <Suspense>
+            <FooterExtras />
+          </Suspense>
         </div>
       </div>
     </footer>
