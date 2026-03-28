@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 
 function ChatBubbleUser({ children }: { children: React.ReactNode }) {
   return (
@@ -166,9 +165,6 @@ export function ThemesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
-            Customization
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             Your system, your way
           </h2>

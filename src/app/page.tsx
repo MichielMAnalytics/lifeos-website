@@ -1,6 +1,5 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
-import { StatsBar } from "@/components/stats-bar";
 import { FlowInfographic } from "@/components/flow-infographic";
 import { Features } from "@/components/features";
 import { DemoSection } from "@/components/demo-section";
@@ -20,13 +19,24 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <ScrollReveal><StatsBar /></ScrollReveal>
+        <div className="flex justify-center py-8">
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-border to-transparent" />
+        </div>
         <ScrollReveal><FlowInfographic /></ScrollReveal>
+        <div className="flex justify-center py-8">
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-border to-transparent" />
+        </div>
         <ScrollReveal><Features /></ScrollReveal>
+        <div className="flex justify-center py-8">
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-border to-transparent" />
+        </div>
         <ScrollReveal><DemoSection /></ScrollReveal>
         <ScrollReveal><AICoach /></ScrollReveal>
         <ScrollReveal><UseCases /></ScrollReveal>
         <ScrollReveal><Pricing /></ScrollReveal>
+        <div className="flex justify-center py-8">
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-border to-transparent" />
+        </div>
         <ScrollReveal><Testimonials /></ScrollReveal>
         <ScrollReveal><ThemesSection /></ScrollReveal>
         <ScrollReveal><FAQSection /></ScrollReveal>

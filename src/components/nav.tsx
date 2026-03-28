@@ -22,53 +22,63 @@ export function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" className="relative z-10">
-          <LogoFull />
-        </a>
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center">
+        {/* Left: logo + nav links */}
+        <div className="flex items-center gap-8">
+          <a href="/" className="relative z-10">
+            <LogoFull />
+          </a>
 
-        <div className="hidden md:flex items-center gap-8">
-          <a
-            href="/features"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            Features
-          </a>
-          <a
-            href="/use-cases"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            Use Cases
-          </a>
-          <a
-            href="/#demo"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            Demo
-          </a>
-          <a
-            href="/#pricing"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            Our Plans
-          </a>
+          <div className="hidden md:flex items-center gap-6">
+            <a
+              href="/features"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Features
+            </a>
+            <a
+              href="/use-cases"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Use Cases
+            </a>
+            <a
+              href="/#demo"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Demo
+            </a>
+            <a
+              href="/#pricing"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Our Plans
+            </a>
+          </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        {/* Right: App, Login, Try for free */}
+        <div className="flex items-center gap-5 ml-auto">
           <a
             href="https://app.lifeos.zone"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
           >
-            Account
+            App
+          </a>
+          <a
+            href="#"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
+          >
+            Login
           </a>
           <a
             href="https://app.lifeos.zone"
             className={cn(
               buttonVariants({ size: "sm" }),
-              "rounded-lg text-xs uppercase tracking-wider font-medium"
+              "rounded-lg text-xs font-medium"
             )}
           >
-            Try for free
+            Try for Free
           </a>
         </div>
       </div>

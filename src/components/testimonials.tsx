@@ -3,6 +3,14 @@
 import { useState, useEffect, useCallback } from "react";
 import { Badge } from "./ui/badge";
 
+const gradients = [
+  "from-orange-400 to-rose-400",
+  "from-blue-400 to-indigo-400",
+  "from-amber-400 to-orange-400",
+  "from-rose-400 to-pink-400",
+  "from-teal-400 to-cyan-400",
+];
+
 const testimonials = [
   {
     name: "Sarah Chen",
@@ -77,9 +85,14 @@ export function Testimonials() {
             <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-2xl mx-auto mb-6">
               &ldquo;{t.quote}&rdquo;
             </p>
-            <div>
-              <p className="text-sm font-semibold">{t.name}</p>
-              <p className="text-xs text-muted-foreground">{t.role}</p>
+            <div className="flex items-center justify-center gap-3">
+              <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${gradients[active]} flex items-center justify-center shadow-sm`}>
+                <span className="text-white font-semibold text-lg">{t.name[0]}</span>
+              </div>
+              <div className="text-left">
+                <p className="text-sm font-semibold">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.role}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Badge } from "./ui/badge";
 import { cn } from "@/lib/utils";
 
 const faqs = [
@@ -23,7 +22,7 @@ const faqs = [
   },
   {
     q: "Can I try it for free?",
-    a: "Yes. Every plan comes with a 7-day free trial. No credit card required.",
+    a: "Yes. Every plan comes with a free trial.",
   },
   {
     q: "Is LifeOS open source?",
@@ -70,9 +69,6 @@ export function FAQSection() {
     <section id="faq" className="relative px-6 py-32">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
-            FAQ
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             Frequently asked questions
           </h2>

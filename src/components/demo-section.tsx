@@ -1,7 +1,5 @@
 "use client";
 
-import { Badge } from "./ui/badge";
-
 export function DemoSection() {
   return (
     <section id="demo" className="relative px-6 py-32">
@@ -12,9 +10,6 @@ export function DemoSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
-            Demo
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             See it in action
           </h2>

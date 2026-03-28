@@ -1,7 +1,5 @@
 "use client";
 
-import { Badge } from "./ui/badge";
-
 const useCases = [
   {
     title: "Voice to action",
@@ -41,9 +39,6 @@ export function UseCases() {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
-            Use Cases
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             Built for how you actually work
           </h2>
@@ -59,12 +54,12 @@ export function UseCases() {
               key={useCase.title}
               className="group bg-background p-8 transition-colors duration-200 hover:bg-surface-hover"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors duration-200">
+                <div className="text-primary">
                   {useCase.icon}
                 </div>
-                <h3 className="text-lg font-semibold">{useCase.title}</h3>
               </div>
+              <h3 className="text-lg font-semibold mb-4">{useCase.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {useCase.description}
               </p>

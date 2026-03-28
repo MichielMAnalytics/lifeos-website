@@ -25,7 +25,7 @@ export function CTASection() {
           Try it free for 7 days
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-          No credit card required. Get the full LifeOS experience: dashboard, AI
+          Get the full LifeOS experience: dashboard, AI
           assistant, and all features included. Cancel anytime.
         </p>
 
@@ -34,7 +34,7 @@ export function CTASection() {
             href="https://app.lifeos.zone"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "group rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2 transition-transform duration-200 hover:scale-105"
+              "group rounded-lg text-xs font-medium px-8 gap-2 transition-transform duration-200 hover:scale-105"
             )}
           >
             Start Free Trial
@@ -56,7 +56,7 @@ export function CTASection() {
             href="#pricing"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "rounded-lg text-xs uppercase tracking-wider font-medium px-8"
+              "rounded-lg text-xs font-medium px-8"
             )}
           >
             View Pricing

@@ -1,7 +1,5 @@
 "use client";
 
-import { Badge } from "./ui/badge";
-
 const coachFeatures = [
   {
     icon: (
@@ -50,13 +48,10 @@ export function AICoach() {
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
-            AI LifeCoach
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             More than a chatbot
           </h2>
-          <p className="text-xs text-muted-foreground/60 font-medium tracking-wide uppercase mt-2">Powered by OpenClaw</p>
+          <p className="text-xs text-muted-foreground/60 font-medium tracking-wide mt-2">Powered by OpenClaw</p>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
             An AI that knows your life context, acts proactively, and works as a personal
             coach, not just a question-answering machine.

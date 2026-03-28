@@ -30,7 +30,7 @@ export function EmailSignup() {
           Ready to take control?
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-md mx-auto">
-          Try LifeOS free for 7 days. No credit card required.
+          Try LifeOS free for 7 days.
         </p>
 
         {submitted ? (
@@ -53,7 +53,7 @@ export function EmailSignup() {
               />
               <button
                 type="submit"
-                className="w-full sm:w-auto px-6 py-3 rounded-lg bg-primary text-primary-foreground text-xs uppercase tracking-wider font-medium hover:opacity-90 transition-opacity"
+                className="w-full sm:w-auto px-6 py-3 rounded-lg bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
               >
                 Subscribe
               </button>
@@ -61,7 +61,7 @@ export function EmailSignup() {
 
             <div className="flex items-center gap-3 my-6">
               <div className="flex-1 h-px bg-border" />
-              <span className="text-xs text-muted-foreground uppercase tracking-wider">or</span>
+              <span className="text-xs text-muted-foreground">or</span>
               <div className="flex-1 h-px bg-border" />
             </div>
 
@@ -69,7 +69,7 @@ export function EmailSignup() {
               href="#get-started"
               className={cn(
                 buttonVariants({ size: "lg" }),
-                "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2"
+                "rounded-lg text-xs font-medium px-8 gap-2"
               )}
             >
               Get Started
