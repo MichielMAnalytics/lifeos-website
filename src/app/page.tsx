@@ -6,10 +6,8 @@ import { DemoSection } from "@/components/demo-section";
 import { AICoach } from "@/components/ai-coach";
 import { UseCases } from "@/components/use-cases";
 import { Pricing } from "@/components/pricing";
-import { Testimonials } from "@/components/testimonials";
 import { ThemesSection } from "@/components/themes-section";
 import { FAQSection } from "@/components/faq-section";
-import { EmailSignup } from "@/components/email-signup";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
@@ -34,13 +32,8 @@ export default function Home() {
         <ScrollReveal><AICoach /></ScrollReveal>
         <ScrollReveal><UseCases /></ScrollReveal>
         <ScrollReveal><Pricing /></ScrollReveal>
-        <div className="flex justify-center py-8">
-          <div className="h-px w-32 bg-gradient-to-r from-transparent via-border to-transparent" />
-        </div>
-        <ScrollReveal><Testimonials /></ScrollReveal>
         <ScrollReveal><ThemesSection /></ScrollReveal>
         <ScrollReveal><FAQSection /></ScrollReveal>
-        <ScrollReveal><EmailSignup /></ScrollReveal>
       </main>
       <Footer />
     </>
