@@ -31,7 +31,7 @@ export function CTASection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#get-started"
+            href="https://app.lifeos.zone"
             className={cn(
               buttonVariants({ size: "lg" }),
               "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2"

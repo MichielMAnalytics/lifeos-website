@@ -84,7 +84,7 @@ export function Hero() {
       {/* CTA buttons */}
       <div className="animate-fade-up delay-5 mt-10 flex flex-col sm:flex-row items-center gap-4">
         <a
-          href="#get-started"
+          href="https://app.lifeos.zone"
           className={cn(
             buttonVariants({ size: "lg" }),
             "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2"

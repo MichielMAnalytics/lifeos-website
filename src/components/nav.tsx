@@ -50,13 +50,13 @@ export function Nav() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#"
+            href="https://app.lifeos.zone"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
           >
             Account
           </a>
           <a
-            href="#get-started"
+            href="https://app.lifeos.zone"
             className={cn(
               buttonVariants({ size: "sm" }),
               "rounded-lg text-xs uppercase tracking-wider font-medium"

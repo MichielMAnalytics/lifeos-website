@@ -48,7 +48,7 @@ export function Footer() {
                 FAQ
               </a>
               <a
-                href="#"
+                href="https://app.lifeos.zone"
                 className="text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
                 Account
