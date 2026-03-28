@@ -4,52 +4,52 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* LifeOS Midnight theme — always dark */
+/* LifeOS Light theme */
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #0a0a0a;
-  --card-foreground: #ffffff;
-  --popover: #0a0a0a;
-  --popover-foreground: #ffffff;
-  --primary: #ffffff;
-  --primary-foreground: #000000;
-  --secondary: #141414;
-  --secondary-foreground: #ffffff;
-  --muted: #141414;
-  --muted-foreground: #666666;
-  --accent: #141414;
-  --accent-foreground: #ffffff;
-  --destructive: #ff4444;
-  --border: #1a1a1a;
-  --input: rgba(255, 255, 255, 0.1);
-  --ring: #444444;
-  --radius: 0.625rem;
+  --background: #faf8f5;
+  --foreground: #2c2420;
+  --card: #f5f0ea;
+  --card-foreground: #2c2420;
+  --popover: #faf8f5;
+  --popover-foreground: #2c2420;
+  --primary: #c45d3e;
+  --primary-foreground: #ffffff;
+  --secondary: #ede6dc;
+  --secondary-foreground: #2c2420;
+  --muted: #ede6dc;
+  --muted-foreground: #8a7e72;
+  --accent: #ede6dc;
+  --accent-foreground: #2c2420;
+  --destructive: #ef4444;
+  --border: #e4ddd4;
+  --input: rgba(0, 0, 0, 0.06);
+  --ring: #c45d3e;
+  --radius: 1rem;
 
   /* LifeOS custom tokens */
-  --surface: #0a0a0a;
-  --surface-hover: #141414;
-  --border-bright: rgba(255, 255, 255, 0.15);
-  --success: #00dc82;
-  --warning: #f5a623;
-  --danger: #ff4444;
+  --surface: #f5f0ea;
+  --surface-hover: #ede6dc;
+  --border-bright: rgba(196, 93, 62, 0.2);
+  --success: #6b8f71;
+  --warning: #d4a04a;
+  --danger: #ef4444;
 
-  /* shadcn chart colors — monochrome */
-  --chart-1: #ffffff;
-  --chart-2: #888888;
-  --chart-3: #555555;
-  --chart-4: #333333;
-  --chart-5: #1a1a1a;
+  /* shadcn chart colors */
+  --chart-1: #c45d3e;
+  --chart-2: #8a7e72;
+  --chart-3: #b5a99a;
+  --chart-4: #d4ccc2;
+  --chart-5: #e4ddd4;
 
   /* sidebar */
-  --sidebar: #050505;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #ffffff;
-  --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #141414;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1a1a1a;
-  --sidebar-ring: #444444;
+  --sidebar: #f5f0ea;
+  --sidebar-foreground: #2c2420;
+  --sidebar-primary: #c45d3e;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ede6dc;
+  --sidebar-accent-foreground: #2c2420;
+  --sidebar-border: #e4ddd4;
+  --sidebar-ring: #c45d3e;
 }
 
 @theme inline {
@@ -117,7 +117,7 @@ body::before {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.018;
+  opacity: 0.012;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
@@ -208,13 +208,13 @@ body::before {
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #666666; }
+::-webkit-scrollbar-thumb { background: #d4ccc2; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #b5a99a; }
 
 /* Selection */
 ::selection {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  background: rgba(196, 93, 62, 0.15);
+  color: #2c2420;
 }
 
 @layer base {
@@ -227,4 +227,9 @@ body::before {
   html {
     @apply font-sans;
   }
+  button, a, input, [role="switch"] {
+    transition: all 150ms ease;
+  }
+  .rounded-lg { border-radius: 1rem !important; }
+  .rounded-xl { border-radius: 1.5rem !important; }
 }

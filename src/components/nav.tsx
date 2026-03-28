@@ -22,14 +22,20 @@ export function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="/" className="relative z-10">
           <LogoFull />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="/#use-cases"
+            href="/features"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+          >
+            Features
+          </a>
+          <a
+            href="/use-cases"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
             Use Cases
@@ -44,7 +50,7 @@ export function Nav() {
             href="/#pricing"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
-            Pricing
+            Our Plans
           </a>
         </div>
 
@@ -62,7 +68,7 @@ export function Nav() {
               "rounded-lg text-xs uppercase tracking-wider font-medium"
             )}
           >
-            Get Started
+            Try for free
           </a>
         </div>
       </div>

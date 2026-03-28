@@ -50,10 +50,10 @@ export function CLISection() {
     <section id="cli" className="relative px-6 py-32">
       {/* Subtle top border */}
       <div className="absolute inset-x-0 top-0">
-        <div className="max-w-6xl mx-auto h-px bg-border" />
+        <div className="max-w-7xl mx-auto h-px bg-border" />
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
@@ -70,9 +70,9 @@ export function CLISection() {
 
         {/* CLI showcase */}
         <div className="max-w-3xl mx-auto">
-          <div className="rounded-lg border border-border overflow-hidden bg-card">
+          <div className="rounded-lg border border-[#2a2a2a] overflow-hidden bg-[#1a1a1a] text-white">
             {/* Terminal chrome */}
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-[#2a2a2a]">
               <div className="flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />

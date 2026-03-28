@@ -6,10 +6,10 @@ export function DemoSection() {
   return (
     <section id="demo" className="relative px-6 py-32">
       <div className="absolute inset-x-0 top-0">
-        <div className="max-w-6xl mx-auto h-px bg-border" />
+        <div className="max-w-7xl mx-auto h-px bg-border" />
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">

@@ -2,8 +2,8 @@ import { Badge } from "./ui/badge";
 
 export function Infographic() {
   return (
-    <section className="relative px-6 py-24">
-      <div className="max-w-5xl mx-auto">
+    <section className="relative px-6 pt-8 pb-24">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-[10px] uppercase tracking-wider font-medium border-border text-muted-foreground">
             How it works
