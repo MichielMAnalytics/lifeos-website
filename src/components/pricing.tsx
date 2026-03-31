@@ -17,7 +17,7 @@ const plans = [
   {
     name: "Basic",
     planId: "basic",
-    monthly: 40,
+    monthly: 30,
     features: [
       "Full LifeOS home",
       "Life Coach (24/7)",
@@ -28,7 +28,7 @@ const plans = [
   {
     name: "Standard",
     planId: "standard",
-    monthly: 55,
+    monthly: 45,
     features: [
       "Full LifeOS home",
       "Life Coach (24/7)",
@@ -40,7 +40,7 @@ const plans = [
   {
     name: "Premium",
     planId: "premium",
-    monthly: 105,
+    monthly: 95,
     features: [
       "Full LifeOS home",
       "Life Coach (24/7)",
