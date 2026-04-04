@@ -35,7 +35,7 @@ const useCases = [
 
 export function UseCases() {
   return (
-    <section id="use-cases" className="relative px-6 py-32">
+    <section id="use-cases" className="relative px-6 py-16 sm:py-20">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">

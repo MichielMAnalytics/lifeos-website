@@ -56,7 +56,7 @@ export function Pricing() {
   const [annual, setAnnual] = useState(false);
 
   return (
-    <section id="pricing" className="relative px-6 py-32">
+    <section id="pricing" className="relative px-6 py-16 sm:py-20">
       <div className="absolute inset-x-0 top-0">
         <div className="max-w-6xl mx-auto h-px bg-border" />
       </div>
