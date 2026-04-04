@@ -66,7 +66,7 @@ export function EmailSignup() {
             </div>
 
             <a
-              href="#get-started"
+              href="https://app.lifeos.zone?auth=true"
               className={cn(
                 buttonVariants({ size: "lg" }),
                 "rounded-lg text-xs font-medium px-8 gap-2"
