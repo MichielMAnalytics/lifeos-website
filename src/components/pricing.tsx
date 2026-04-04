@@ -143,7 +143,7 @@ export function Pricing() {
                 </ul>
 
                 <a
-                  href={`https://app.lifeos.zone?plan=${plan.planId}`}
+                  href={`https://app.lifeos.zone?plan=${plan.planId}&auth=true`}
                   className={cn(
                     buttonVariants({ variant: plan.recommended ? "default" : "outline", size: "lg" }),
                     "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -159,13 +159,13 @@ export function Pricing() {
         {/* Alternative plan links */}
         <div className="mt-10 flex flex-col items-center gap-2">
           <a
-            href="https://app.lifeos.zone?plan=dashboard"
+            href="https://app.lifeos.zone?plan=dashboard&auth=true"
             className="text-sm text-muted-foreground/50 hover:text-muted-foreground transition-colors"
           >
             Already have an AI assistant and only want the LifeOS home?
           </a>
           <a
-            href="https://app.lifeos.zone?plan=byok"
+            href="https://app.lifeos.zone?plan=byok&auth=true"
             className="text-sm text-muted-foreground/50 hover:text-muted-foreground transition-colors"
           >
             Want to bring your own Anthropic API key instead?
