@@ -2633,8 +2633,8 @@ export function Hero() {
             {/* Telegram Chat — compact */}
             <div className="rounded-xl border border-[#d4ccc2] shadow-2xl overflow-hidden flex flex-col" style={{ fontFamily: "'Roboto', system-ui, sans-serif" }}>
               <div className="flex items-center gap-2 px-3 py-2 bg-[#2b5278]">
-                <div className="w-7 h-7 rounded-full bg-[#c45d3e] flex items-center justify-center shrink-0">
-                  <LogoMark size={9} className="text-white" />
+                <div className="w-9 h-9 rounded-full bg-[#c45d3e] flex items-center justify-center shrink-0">
+                  <LogoMark size={14} className="text-white" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1">
@@ -2670,13 +2670,21 @@ export function Hero() {
                   </div>
                 </div>
                 <div className="flex justify-end">
-                  <div className="rounded-xl rounded-br-sm bg-[#e1fec6] px-3 py-1.5 text-[11px] text-[#1a1a1a] shadow-sm flex items-center gap-2 max-w-[90%]">
-                    <svg className="w-3.5 h-3.5 text-[#6b8f71] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
-                    <div className="flex items-center gap-1">
-                      <div className="flex gap-[2px]">{[3,5,2,6,4,7,3,5,8,4,6,3,7,4,5,2,6,8,3,5].map((h,i)=>(<div key={i} className="w-[2px] rounded-full bg-[#6b8f71]" style={{height:`${h*1.5}px`}}/>))}</div>
-                      <span className="text-[9px] text-[#6b8f71] ml-1">0:12</span>
+                  <div className="rounded-xl rounded-br-sm bg-[#5DB5DE] px-2.5 py-2 shadow-sm max-w-[90%] flex items-center gap-2.5">
+                    {/* Play button */}
+                    <div className="w-8 h-8 rounded-full bg-white/90 flex items-center justify-center shrink-0">
+                      <svg width="10" height="12" viewBox="0 0 10 12" fill="#5DB5DE"><polygon points="2,0 10,6 2,12" /></svg>
                     </div>
-                    <div className="text-[9px] text-[#6b8f71]">14:34 <svg className="inline w-[14px] h-[10px] ml-0.5" viewBox="0 0 16 11" fill="none"><path d="M11.5 0.5L5 7L2.5 4.5" stroke="#6b8f71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M14.5 0.5L8 7" stroke="#6b8f71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+                    {/* Waveform + meta */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-[1px] h-4">
+                        {[2,5,3,8,4,10,6,12,4,8,14,5,10,3,12,7,5,14,4,10,6,12,3,8,5,14,6,10,4,8,3,5,2].map((h,i)=>(<div key={i} className="w-[1.5px] rounded-full bg-white/80" style={{height:`${h}px`}}/>))}
+                      </div>
+                      <div className="flex justify-between items-center mt-0.5">
+                        <span className="text-[8px] text-white/70 font-medium">0:12</span>
+                        <span className="text-[8px] text-white/70">14:34 <svg className="inline w-[12px] h-[8px] ml-0.5" viewBox="0 0 16 11" fill="none"><path d="M11.5 0.5L5 7L2.5 4.5" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M14.5 0.5L8 7" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="flex">
@@ -2692,10 +2700,10 @@ export function Hero() {
                 </div>
               </div>
               <div className="flex items-center gap-2 px-3 py-2 bg-[#f5f0ea] border-t border-[#e4ddd4]">
-                <svg className="w-4 h-4 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+                <span className="text-[14px] shrink-0 leading-none" role="img" aria-label="emoji">😊</span>
                 <span className="flex-1 text-[11px] text-[#8a7e72]">Write a message...</span>
-                <svg className="w-4 h-4 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
-                <svg className="w-5 h-5 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5"/></svg>
+                <svg className="w-4 h-4 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+                <svg className="w-5 h-5 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5"/></svg>
               </div>
             </div>
 
