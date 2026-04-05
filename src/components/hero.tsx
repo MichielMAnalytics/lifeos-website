@@ -954,7 +954,7 @@ function MiniCompassPage() {
         </p>
       </div>
 
-      {/* Quarterly Goals header */}
+      {/* Quarterly Goals header — moved to top per chat config */}
       <div
         style={{
           display: "flex",
@@ -963,15 +963,29 @@ function MiniCompassPage() {
           marginBottom: 8,
         }}
       >
-        <h2
-          style={{
-            fontSize: "12px",
-            fontWeight: 600,
-            color: "#2c2420",
-          }}
-        >
-          Quarterly Goals
-        </h2>
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <h2
+            style={{
+              fontSize: "12px",
+              fontWeight: 600,
+              color: "#2c2420",
+            }}
+          >
+            Quarterly Goals
+          </h2>
+          <span
+            style={{
+              fontSize: "7px",
+              fontWeight: 600,
+              padding: "1px 5px",
+              borderRadius: 4,
+              background: "#c45d3e18",
+              color: "#c45d3e",
+            }}
+          >
+            MOVED TO TOP
+          </span>
+        </div>
         <span
           style={{
             fontSize: "8px",
@@ -1860,8 +1874,8 @@ const heroPageComponents: Record<HeroPageId, () => React.JSX.Element> = {
 
 /* --- Interactive Demo --- */
 
-export function HeroInteractiveDemo() {
-  const [activePage, setActivePage] = useState<HeroPageId>("today");
+export function HeroInteractiveDemo({ defaultPage = "today" }: { defaultPage?: HeroPageId }) {
+  const [activePage, setActivePage] = useState<HeroPageId>(defaultPage);
   const ActiveComponent = heroPageComponents[activePage];
 
   return (

@@ -125,8 +125,8 @@ export function FlowInfographic() {
             <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide">adjusts dashboard</span>
           </div>
 
-          {/* Dashboard — interactive demo */}
-          <HeroInteractiveDemo />
+          {/* Dashboard — shows goals front & centre (matching the chat) */}
+          <HeroInteractiveDemo defaultPage="compass" />
         </div>
 
         <p className="text-center text-xs text-muted-foreground mt-5">
