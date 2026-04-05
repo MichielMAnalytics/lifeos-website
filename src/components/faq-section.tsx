@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What does Bring Your Own Key mean?",
-    a: "You connect your own API key from Anthropic or OpenAI. You only pay for what you use directly to the AI provider. The subscription covers hosting your personal AI LifeCoach.",
+    a: "You connect your own Claude API key. You only pay for what you use directly to the AI provider. The subscription covers hosting your personal AI LifeCoach.",
   },
   {
     q: "Can I try it for free?",

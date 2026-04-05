@@ -33,7 +33,7 @@ const faqs = [
       },
       {
         q: "What does BYOK mean?",
-        a: "BYOK stands for 'Bring Your Own Keys'. You provide your own API keys (OpenAI, Anthropic, etc.) and pay the AI providers directly. This gives you full control over costs and model selection.",
+        a: "BYOK stands for 'Bring Your Own Key'. You provide your own Claude API key and pay for AI usage directly. This gives you full control over costs.",
       },
       {
         q: "How do I talk to the AI?",

@@ -13,47 +13,18 @@ function formatPrice(price: number) {
   return price % 1 === 0 ? price.toString() : price.toFixed(2);
 }
 
-const plans = [
-  {
-    name: "Basic",
-    planId: "basic",
-    monthly: 30,
-    features: [
-      "Full LifeOS home",
-      "Life Coach (24/7)",
-      "€10 AI credits/mo",
-    ],
-    recommended: false,
-  },
-  {
-    name: "Standard",
-    planId: "standard",
-    monthly: 45,
-    features: [
-      "Full LifeOS home",
-      "Life Coach (24/7)",
-      "€25 AI credits/mo",
-      "Priority support",
-    ],
-    recommended: true,
-  },
-  {
-    name: "Premium",
-    planId: "premium",
-    monthly: 95,
-    features: [
-      "Full LifeOS home",
-      "Life Coach (24/7)",
-      "€50 AI credits/mo",
-      "Priority support",
-      "Early access to features",
-    ],
-    recommended: false,
-  },
+const creditTiers = [
+  { label: "€10 credits", credits: 10, total: 30 },
+  { label: "€25 credits", credits: 25, total: 45 },
+  { label: "€100 credits", credits: 100, total: 120 },
 ];
 
 export function Pricing() {
   const [annual, setAnnual] = useState(false);
+  const [selectedCredit, setSelectedCredit] = useState(0);
+
+  const currentTier = creditTiers[selectedCredit];
+  const platformFee = 20;
 
   return (
     <section id="pricing" className="relative px-6 py-16 sm:py-20">
@@ -71,7 +42,7 @@ export function Pricing() {
             Try LifeOS free for 7 days
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            We believe everyone deserves to feel in control. Pick what fits — you won&apos;t be charged until your trial ends.
+            Full access, no charge today. Pick what fits &mdash; you won&apos;t be charged until your trial ends.
           </p>
         </div>
 
@@ -105,71 +76,157 @@ export function Pricing() {
 
         {/* 3-tier pricing grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
-          {plans.map((plan) => {
-            const price = annual ? annualPrice(plan.monthly) : plan.monthly;
-            return (
-              <div
-                key={plan.planId}
-                className={cn(
-                  "rounded-lg border p-8 flex flex-col relative",
-                  plan.recommended
-                    ? "border-foreground/20 bg-surface-hover"
-                    : "border-border bg-card"
-                )}
-              >
-                {plan.recommended && (
-                  <span className="absolute top-4 right-4 text-[10px] uppercase tracking-wider font-medium bg-foreground text-background px-2.5 py-1 rounded-full">
-                    Recommended
-                  </span>
-                )}
-                <h3 className="text-lg font-semibold">{plan.name}</h3>
-                <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-bold">&euro;{formatPrice(price)}</span>
-                  <span className="text-sm text-muted-foreground">/mo</span>
-                </div>
-                {annual && (
-                  <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
-                )}
 
-                <ul className="mt-6 space-y-3 flex-1">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2 text-sm">
-                      <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-foreground/80">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+          {/* ── Dashboard ── */}
+          <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
+            <h3 className="text-lg font-semibold">LifeOS Home</h3>
+            <p className="text-sm text-muted-foreground mt-1">Plan, track, and reflect</p>
 
-                <a
-                  href={`https://app.lifeos.zone?plan=${plan.planId}&auth=true`}
-                  className={cn(
-                    buttonVariants({ variant: plan.recommended ? "default" : "outline", size: "lg" }),
-                    "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
-                  )}
-                >
-                  Start free trial
-                </a>
+            <div className="mt-5 flex items-baseline gap-2">
+              <span className="text-4xl font-bold">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
+              <span className="text-sm text-muted-foreground">/mo</span>
+            </div>
+            {annual && (
+              <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
+            )}
+
+            <ul className="mt-6 space-y-3 flex-1">
+              {[
+                "Full home & all pages",
+                "CLI access",
+                "Connect your own AI agent",
+              ].map((f) => (
+                <li key={f} className="flex items-start gap-2 text-sm">
+                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-foreground/80">{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="https://app.lifeos.zone?plan=dashboard&auth=true"
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
+              )}
+            >
+              Start free trial
+            </a>
+          </div>
+
+          {/* ── BYOK (recommended, middle) ── */}
+          <div className="rounded-lg border border-foreground/20 bg-surface-hover p-8 flex flex-col relative">
+            <span className="absolute top-4 right-4 text-[10px] uppercase tracking-wider font-medium bg-foreground text-background px-2.5 py-1 rounded-full">
+              Recommended
+            </span>
+
+            <h3 className="text-lg font-semibold">Bring Your Own Key</h3>
+            <p className="text-sm text-muted-foreground mt-1">Use your own Claude API key for AI</p>
+
+            <div className="mt-5 flex items-baseline gap-2">
+              <span className="text-4xl font-bold">&euro;{formatPrice(annual ? annualPrice(20) : 20)}</span>
+              <span className="text-sm text-muted-foreground">/mo</span>
+            </div>
+            {annual && (
+              <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
+            )}
+
+            <ul className="mt-6 space-y-3 flex-1">
+              {[
+                "LifeCoach hosting & updates",
+                "No AI markup \u2014 pay Claude directly",
+                "Telegram & Discord channels",
+              ].map((f) => (
+                <li key={f} className="flex items-start gap-2 text-sm">
+                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-foreground/80">{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="https://app.lifeos.zone?plan=byok&auth=true"
+              className={cn(
+                buttonVariants({ variant: "default", size: "lg" }),
+                "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
+              )}
+            >
+              Start free trial
+            </a>
+          </div>
+
+          {/* ── Managed (right) ── */}
+          <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
+            <h3 className="text-lg font-semibold">Managed</h3>
+            <p className="text-sm text-muted-foreground mt-1">We handle everything for you</p>
+
+            <div className="mt-5 flex items-baseline gap-2">
+              <span className="text-4xl font-bold">
+                &euro;{formatPrice(annual ? annualPrice(currentTier.total) : currentTier.total)}
+              </span>
+              <span className="text-sm text-muted-foreground">/mo</span>
+            </div>
+            {annual && (
+              <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
+            )}
+
+            {/* Breakdown with credit dropdown */}
+            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">LifeOS + LifeCoach</span>
+                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(platformFee) : platformFee)}</span>
               </div>
-            );
-          })}
-        </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground flex items-center gap-1.5">
+                  AI credits
+                  <select
+                    value={selectedCredit}
+                    onChange={(e) => setSelectedCredit(Number(e.target.value))}
+                    className="text-xs bg-muted/50 border border-border rounded px-1.5 py-0.5 text-foreground font-medium cursor-pointer focus:outline-none focus:ring-1 focus:ring-foreground/20"
+                  >
+                    {creditTiers.map((tier, i) => (
+                      <option key={tier.credits} value={i}>
+                        {tier.label}
+                      </option>
+                    ))}
+                  </select>
+                </span>
+                <span className="font-medium">
+                  &euro;{formatPrice(annual ? annualPrice(currentTier.credits) : currentTier.credits)}
+                </span>
+              </div>
+            </div>
+            <p className="text-[11px] text-muted-foreground mt-2">Unused credits roll over monthly</p>
 
-        {/* Alternative plan links */}
-        <div className="mt-10 flex flex-col items-center gap-2">
-          <a
-            href="https://app.lifeos.zone?plan=dashboard&auth=true"
-            className="text-sm text-muted-foreground/50 hover:text-muted-foreground transition-colors"
-          >
-            Already have an AI assistant and only want the LifeOS home?
-          </a>
-          <a
-            href="https://app.lifeos.zone?plan=byok&auth=true"
-            className="text-sm text-muted-foreground/50 hover:text-muted-foreground transition-colors"
-          >
-            Want to bring your own Anthropic API key instead?
-          </a>
+            <ul className="mt-4 space-y-3 flex-1">
+              {[
+                "Everything set up and ready to go",
+                "No API key needed",
+                "Telegram & Discord channels",
+              ].map((f) => (
+                <li key={f} className="flex items-start gap-2 text-sm">
+                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-foreground/80">{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="https://app.lifeos.zone?plan=managed&auth=true"
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
+              )}
+            >
+              Start free trial
+            </a>
+          </div>
         </div>
       </div>
     </section>
