@@ -94,6 +94,22 @@ export function FlowInfographic() {
                   <div className="text-[9px] text-[#8a7e72] text-right mt-0.5">15:02</div>
                 </div>
               </div>
+
+              {/* User: add daily quote */}
+              <div className="flex justify-end">
+                <div className="rounded-xl rounded-br-sm bg-[#e1fec6] px-3 py-1.5 text-[11px] text-[#1a1a1a] shadow-sm max-w-[90%]">
+                  Add a motivational quote to my morning page
+                  <div className="text-[9px] text-[#6b8f71] text-right mt-0.5">15:03 <svg className="inline w-[14px] h-[10px] ml-0.5" viewBox="0 0 16 11" fill="none"><path d="M11.5 0.5L5 7L2.5 4.5" stroke="#6b8f71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M14.5 0.5L8 7" stroke="#6b8f71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+                </div>
+              </div>
+
+              {/* Bot: confirms quote widget */}
+              <div className="flex">
+                <div className="rounded-xl rounded-bl-sm bg-white px-3 py-1.5 text-[11px] text-[#1a1a1a] shadow-sm max-w-[90%]">
+                  Added. You&apos;ll see a new quote each morning on your Today page.
+                  <div className="text-[9px] text-[#8a7e72] text-right mt-0.5">15:03</div>
+                </div>
+              </div>
             </div>
 
             {/* Input bar */}
@@ -125,8 +141,30 @@ export function FlowInfographic() {
             <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide">adjusts dashboard</span>
           </div>
 
-          {/* Dashboard — shows goals front & centre (matching the chat) */}
-          <HeroInteractiveDemo defaultPage="compass" />
+          {/* Dashboard — annotated to show what changed */}
+          <div className="relative">
+            <HeroInteractiveDemo defaultPage="compass" />
+
+            {/* Annotation arrows */}
+            <div className="hidden lg:block absolute -right-2 top-[80px] translate-x-full">
+              <div className="flex items-center gap-2">
+                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
+                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Goals → top</span>
+              </div>
+            </div>
+            <div className="hidden lg:block absolute -right-2 top-[220px] translate-x-full">
+              <div className="flex items-center gap-2">
+                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
+                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Direct style</span>
+              </div>
+            </div>
+            <div className="hidden lg:block absolute -right-2 top-[340px] translate-x-full">
+              <div className="flex items-center gap-2">
+                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
+                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Quote added</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <p className="text-center text-xs text-muted-foreground mt-5">

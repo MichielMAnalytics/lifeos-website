@@ -1222,6 +1222,63 @@ function MiniCompassPage() {
           ))}
         </div>
       </div>
+
+      {/* Daily Quote — added via chat config */}
+      <div
+        style={{
+          background: "#f7f3ed",
+          borderRadius: 8,
+          border: "1.5px solid #c45d3e30",
+          padding: "8px 10px",
+          marginTop: 10,
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginBottom: 4,
+          }}
+        >
+          <div
+            style={{
+              fontSize: "7px",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              color: "#8a7e72",
+              fontWeight: 600,
+            }}
+          >
+            Daily Quote
+          </div>
+          <span
+            style={{
+              fontSize: "6px",
+              fontWeight: 600,
+              padding: "1px 4px",
+              borderRadius: 3,
+              background: "#c45d3e18",
+              color: "#c45d3e",
+            }}
+          >
+            NEW
+          </span>
+        </div>
+        <p
+          style={{
+            fontSize: "9px",
+            color: "#2c2420",
+            fontStyle: "italic",
+            lineHeight: 1.5,
+          }}
+        >
+          &ldquo;The secret of getting ahead is getting started.&rdquo;
+        </p>
+        <p style={{ fontSize: "7px", color: "#8a7e72", marginTop: 2 }}>
+          — Mark Twain
+        </p>
+      </div>
     </div>
   );
 }
