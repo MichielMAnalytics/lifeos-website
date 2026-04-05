@@ -18,7 +18,7 @@ export function Footer() {
               <LogoFull />
               <div className="mt-6">
                 <a
-                  href="#"
+                  href="https://app.lifeos.zone/login"
                   className={cn(
                     buttonVariants({ variant: "outline", size: "sm" }),
                     "rounded-lg text-xs font-medium"
@@ -47,17 +47,8 @@ export function Footer() {
               <div className="flex flex-col gap-3">
                 <a href="/about" className="text-xs text-muted-foreground hover:text-foreground transition-colors">About</a>
                 <a href="/partners" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Partner Program</a>
-                <a href="mailto:info@lifeos.zone" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              </div>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="text-xs font-medium text-foreground mb-4">Resources</h4>
-              <div className="flex flex-col gap-3">
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Documentation</a>
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">API Reference</a>
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Changelog</a>
+                <a href="/contact" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+                <a href="/changelog" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Changelog</a>
               </div>
             </div>
 
@@ -65,9 +56,9 @@ export function Footer() {
             <div>
               <h4 className="text-xs font-medium text-foreground mb-4">My LifeOS</h4>
               <div className="flex flex-col gap-3">
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Dashboard</a>
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Account Settings</a>
-                <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">AI LifeCoach</a>
+                <a href="https://app.lifeos.zone" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Dashboard</a>
+                <a href="https://app.lifeos.zone/settings" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Account Settings</a>
+                <a href="https://app.lifeos.zone" className="text-xs text-muted-foreground hover:text-foreground transition-colors">AI LifeCoach</a>
               </div>
             </div>
           </div>
