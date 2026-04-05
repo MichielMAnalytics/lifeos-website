@@ -85,8 +85,8 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4 text-xs opacity-60">
               <span>&copy; {new Date().getFullYear()} lifeos.zone</span>
-              <a href="#" className="hover:opacity-100 transition-opacity">Terms</a>
-              <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>
+              <a href="/terms" className="hover:opacity-100 transition-opacity">Terms</a>
+              <a href="/privacy" className="hover:opacity-100 transition-opacity">Privacy</a>
             </div>
 
             <div className="flex items-center gap-5">
