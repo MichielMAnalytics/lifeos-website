@@ -918,6 +918,24 @@ function MiniJournalPage() {
 function MiniCompassPage() {
   return (
     <div style={{ padding: 12, overflowY: "auto", height: "100%" }}>
+      {/* Layout updated banner */}
+      <div
+        style={{
+          background: "#c45d3e10",
+          border: "1px solid #c45d3e30",
+          borderRadius: 6,
+          padding: "5px 8px",
+          marginBottom: 10,
+          display: "flex",
+          alignItems: "center",
+          gap: 6,
+        }}
+      >
+        <span style={{ fontSize: "11px" }}>✨</span>
+        <span style={{ fontSize: "8px", color: "#c45d3e", fontWeight: 500 }}>
+          Layout updated — Goals moved to top, communication set to direct
+        </span>
+      </div>
       {/* Identity card */}
       <div
         style={{
@@ -2558,24 +2576,16 @@ function TelegramChatMockup() {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 8,
-          padding: "8px 12px",
+          gap: 10,
+          padding: "10px 14px",
           background: "#fff",
           borderTop: "1px solid #e4e4e4",
         }}
       >
-        <Menu
-          style={{
-            width: 18,
-            height: 18,
-            color: "#999",
-            flexShrink: 0,
-          }}
-        />
         <Paperclip
           style={{
-            width: 18,
-            height: 18,
+            width: 20,
+            height: 20,
             color: "#999",
             flexShrink: 0,
           }}
@@ -2591,8 +2601,16 @@ function TelegramChatMockup() {
         </span>
         <Smile
           style={{
-            width: 18,
-            height: 18,
+            width: 20,
+            height: 20,
+            color: "#999",
+            flexShrink: 0,
+          }}
+        />
+        <Mic
+          style={{
+            width: 20,
+            height: 20,
             color: "#999",
             flexShrink: 0,
           }}
