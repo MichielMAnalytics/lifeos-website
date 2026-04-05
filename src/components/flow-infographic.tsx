@@ -25,8 +25,8 @@ export function FlowInfographic() {
             {/* Header */}
             <div className="flex items-center gap-2 px-3 py-2 bg-[#2b5278]">
               <svg className="w-4 h-4 text-white/80 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
-              <div className="w-7 h-7 rounded-full bg-[#c45d3e] flex items-center justify-center shrink-0">
-                <LogoMark size={9} className="text-white" />
+              <div className="w-9 h-9 rounded-full bg-[#c45d3e] flex items-center justify-center shrink-0">
+                <LogoMark size={14} className="text-white" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1">
@@ -98,10 +98,10 @@ export function FlowInfographic() {
 
             {/* Input bar */}
             <div className="flex items-center gap-2 px-3 py-2 bg-[#f5f0ea] border-t border-[#e4ddd4]">
-              <svg className="w-4 h-4 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+              <span className="text-[14px] shrink-0 leading-none" role="img" aria-label="emoji">😊</span>
               <span className="flex-1 text-[11px] text-[#8a7e72]">Write a message...</span>
-              <svg className="w-4 h-4 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
-              <svg className="w-5 h-5 text-[#8a7e72]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5"/></svg>
+              <svg className="w-4 h-4 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+              <svg className="w-5 h-5 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5"/></svg>
             </div>
           </div>
 

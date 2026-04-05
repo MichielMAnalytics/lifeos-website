@@ -97,55 +97,55 @@ function MiniLifeCoachPage() {
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <div
             style={{
-              maxWidth: "82%",
-              background: "#2c2420",
+              maxWidth: "85%",
+              background: "#4B9ED6",
               borderRadius: "12px 12px 4px 12px",
-              padding: "6px 10px 4px",
+              padding: "6px 8px 5px",
               display: "flex",
               alignItems: "center",
-              gap: "8px",
+              gap: "7px",
             }}
           >
-            {/* Play button */}
+            {/* Play button — large circle */}
             <div
               style={{
-                width: 22,
-                height: 22,
+                width: 28,
+                height: 28,
                 borderRadius: "50%",
-                background: "#c45d3e",
+                background: "rgba(255,255,255,0.95)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexShrink: 0,
               }}
             >
-              <svg width="8" height="10" viewBox="0 0 8 10" fill="white">
-                <polygon points="1,0 8,5 1,10" />
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="#4B9ED6">
+                <polygon points="2,0 10,6 2,12" />
               </svg>
             </div>
             {/* Waveform + duration */}
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 1, height: 18 }}>
-                {[3,6,10,7,12,8,14,10,6,12,9,14,7,11,5,8,13,6,10,4,7,11,6,9,3].map((h, i) => (
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5px", height: 16 }}>
+                {[2,4,8,3,10,6,12,4,8,14,6,10,3,12,8,5,14,4,10,7,12,3,8,6,14,5,10,8,4,12,6,3,8,4,2].map((h, i) => (
                   <div
                     key={i}
                     style={{
-                      width: 2,
+                      width: 1.5,
                       height: h,
                       borderRadius: 1,
-                      background: "rgba(255,255,255,0.6)",
+                      background: "rgba(255,255,255,0.85)",
                       flexShrink: 0,
                     }}
                   />
                 ))}
               </div>
-              <div style={{ display: "flex", justifyContent: "space-between", marginTop: 1 }}>
-                <span style={{ fontSize: "7px", color: "rgba(255,255,255,0.5)" }}>0:08</span>
-                <span style={{ fontSize: "7px", color: "rgba(255,255,255,0.5)" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 2 }}>
+                <span style={{ fontSize: "7px", color: "rgba(255,255,255,0.7)", fontWeight: 500 }}>0:08</span>
+                <span style={{ fontSize: "7px", color: "rgba(255,255,255,0.7)" }}>
                   15:01{" "}
                   <svg style={{ display: "inline", width: 10, height: 7, verticalAlign: "middle" }} viewBox="0 0 16 11" fill="none">
-                    <path d="M11.5 0.5L5 7L2.5 4.5" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M14.5 0.5L8 7" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M11.5 0.5L5 7L2.5 4.5" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M14.5 0.5L8 7" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
               </div>
