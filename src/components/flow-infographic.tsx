@@ -142,29 +142,7 @@ export function FlowInfographic() {
           </div>
 
           {/* Dashboard — annotated to show what changed */}
-          <div className="relative">
-            <HeroInteractiveDemo defaultPage="compass" />
-
-            {/* Annotation arrows */}
-            <div className="hidden lg:block absolute -right-2 top-[80px] translate-x-full">
-              <div className="flex items-center gap-2">
-                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
-                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Goals → top</span>
-              </div>
-            </div>
-            <div className="hidden lg:block absolute -right-2 top-[220px] translate-x-full">
-              <div className="flex items-center gap-2">
-                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
-                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Direct style</span>
-              </div>
-            </div>
-            <div className="hidden lg:block absolute -right-2 top-[340px] translate-x-full">
-              <div className="flex items-center gap-2">
-                <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M24 6H4" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="0,6 6,2 6,10" fill="#c45d3e"/></svg>
-                <span className="text-[10px] text-[#c45d3e] font-medium whitespace-nowrap bg-[#c45d3e]/10 px-2 py-1 rounded">Quote added</span>
-              </div>
-            </div>
-          </div>
+          <HeroInteractiveDemo defaultPage="compass" />
         </div>
 
         <p className="text-center text-xs text-muted-foreground mt-5">

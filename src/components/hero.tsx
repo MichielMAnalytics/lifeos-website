@@ -918,23 +918,45 @@ function MiniJournalPage() {
 function MiniCompassPage() {
   return (
     <div style={{ padding: 12, overflowY: "auto", height: "100%" }}>
-      {/* Layout updated banner */}
+      {/* Layout change visualization */}
       <div
         style={{
-          background: "#c45d3e10",
-          border: "1px solid #c45d3e30",
-          borderRadius: 6,
-          padding: "5px 8px",
+          background: "#c45d3e08",
+          border: "1.5px solid #c45d3e30",
+          borderRadius: 8,
+          padding: "8px 10px",
           marginBottom: 10,
-          display: "flex",
-          alignItems: "center",
-          gap: 6,
         }}
       >
-        <span style={{ fontSize: "11px" }}>✨</span>
-        <span style={{ fontSize: "8px", color: "#c45d3e", fontWeight: 500 }}>
-          Layout updated — Goals moved to top, communication set to direct
-        </span>
+        <div style={{ fontSize: "7px", fontWeight: 700, color: "#c45d3e", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 6 }}>
+          3 changes applied
+        </div>
+        <div style={{ display: "flex", gap: 6 }}>
+          {/* Before */}
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: "6px", color: "#8a7e72", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 3 }}>Before</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <div style={{ height: 8, borderRadius: 3, background: "#e4ddd4", fontSize: "5px", color: "#8a7e72", display: "flex", alignItems: "center", paddingLeft: 4 }}>Identity</div>
+              <div style={{ height: 8, borderRadius: 3, background: "#e4ddd4", fontSize: "5px", color: "#8a7e72", display: "flex", alignItems: "center", paddingLeft: 4 }}>Tasks</div>
+              <div style={{ height: 8, borderRadius: 3, background: "#e4ddd4", fontSize: "5px", color: "#8a7e72", display: "flex", alignItems: "center", paddingLeft: 4 }}>Journal</div>
+              <div style={{ height: 6, borderRadius: 3, background: "#c45d3e20", fontSize: "5px", color: "#c45d3e", display: "flex", alignItems: "center", paddingLeft: 4, fontWeight: 600 }}>Goals</div>
+            </div>
+          </div>
+          {/* Arrow */}
+          <div style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M2 7H16" stroke="#c45d3e" strokeWidth="1.5"/><polygon points="14,3 20,7 14,11" fill="#c45d3e"/></svg>
+          </div>
+          {/* After */}
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: "6px", color: "#c45d3e", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 3 }}>After</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <div style={{ height: 10, borderRadius: 3, background: "#c45d3e25", fontSize: "5px", color: "#c45d3e", display: "flex", alignItems: "center", paddingLeft: 4, fontWeight: 700, border: "1px solid #c45d3e40" }}>↑ Goals (top)</div>
+              <div style={{ height: 8, borderRadius: 3, background: "#e4ddd4", fontSize: "5px", color: "#8a7e72", display: "flex", alignItems: "center", paddingLeft: 4 }}>Identity</div>
+              <div style={{ height: 8, borderRadius: 3, background: "#e4ddd4", fontSize: "5px", color: "#8a7e72", display: "flex", alignItems: "center", paddingLeft: 4 }}>Tasks</div>
+              <div style={{ height: 6, borderRadius: 3, background: "#6b8f7120", fontSize: "5px", color: "#6b8f71", display: "flex", alignItems: "center", paddingLeft: 4, fontWeight: 600, border: "1px solid #6b8f7140" }}>+ Quote (new)</div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Identity card */}
       <div
