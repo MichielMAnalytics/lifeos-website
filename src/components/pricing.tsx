@@ -19,6 +19,20 @@ const creditTiers = [
   { label: "€100 credits", credits: 100, total: 120 },
 ];
 
+function CheckIcon() {
+  return (
+    <svg className="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
+function DashIcon() {
+  return (
+    <span className="w-4 h-4 shrink-0 flex items-center justify-center text-muted-foreground/40 text-xs">&mdash;</span>
+  );
+}
+
 export function Pricing() {
   const [annual, setAnnual] = useState(false);
   const [selectedCredit, setSelectedCredit] = useState(0);
@@ -80,7 +94,7 @@ export function Pricing() {
           {/* ── LifeOS Home ── */}
           <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
             <h3 className="text-lg font-semibold">LifeOS Home</h3>
-            <p className="text-sm text-muted-foreground mt-1">Dashboard only, bring your own AI</p>
+            <p className="text-sm text-muted-foreground mt-1">Dashboard only</p>
 
             <div className="mt-5 flex items-baseline gap-2">
               <span className="text-4xl font-bold">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
@@ -93,28 +107,26 @@ export function Pricing() {
             {/* Breakdown */}
             <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeOS dashboard</span>
+                <span className="text-muted-foreground">Platform</span>
                 <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">AI / LifeCoach</span>
-                <span className="text-muted-foreground text-xs">not included</span>
+                <span className="text-muted-foreground">LifeCoach</span>
+                <span className="text-muted-foreground/50 text-xs">&mdash;</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">AI credits</span>
+                <span className="text-muted-foreground/50 text-xs">&mdash;</span>
               </div>
             </div>
 
-            <ul className="mt-5 space-y-3 flex-1">
-              {[
-                "Full home & all pages",
-                "CLI access",
-                "Connect your own AI agent",
-              ].map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-foreground/80">{f}</span>
-                </li>
-              ))}
+            {/* Features */}
+            <ul className="mt-5 space-y-2.5 flex-1 text-sm">
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">CLI access</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Connect your own AI</span></li>
+              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">Telegram & Discord</span></li>
             </ul>
 
             <a
@@ -148,28 +160,26 @@ export function Pricing() {
             {/* Breakdown */}
             <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeOS + LifeCoach</span>
+                <span className="text-muted-foreground">Platform</span>
+                <span className="font-medium">included</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">LifeCoach</span>
                 <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(20) : 20)}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">AI costs</span>
+                <span className="text-muted-foreground">AI credits</span>
                 <span className="text-muted-foreground text-xs">pay Claude directly</span>
               </div>
             </div>
 
-            <ul className="mt-5 space-y-3 flex-1">
-              {[
-                "No AI markup on usage",
-                "Telegram & Discord channels",
-                "Full control over AI costs",
-              ].map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-foreground/80">{f}</span>
-                </li>
-              ))}
+            {/* Features */}
+            <ul className="mt-5 space-y-2.5 flex-1 text-sm">
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">No AI markup on usage</span></li>
+              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">AI credits included</span></li>
             </ul>
 
             <a
@@ -201,7 +211,11 @@ export function Pricing() {
             {/* Breakdown with credit dropdown */}
             <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeOS + LifeCoach</span>
+                <span className="text-muted-foreground">Platform</span>
+                <span className="font-medium">included</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">LifeCoach</span>
                 <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(platformFee) : platformFee)}</span>
               </div>
               <div className="flex justify-between items-center">
@@ -226,19 +240,13 @@ export function Pricing() {
             </div>
             <p className="text-[11px] text-muted-foreground mt-2">Unused credits roll over monthly</p>
 
-            <ul className="mt-5 space-y-3 flex-1">
-              {[
-                "No API key needed",
-                "Telegram & Discord channels",
-                "Nothing to configure",
-              ].map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-foreground/80">{f}</span>
-                </li>
-              ))}
+            {/* Features */}
+            <ul className="mt-4 space-y-2.5 flex-1 text-sm">
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">AI credits included</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Nothing to configure</span></li>
             </ul>
 
             <a
