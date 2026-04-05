@@ -113,7 +113,7 @@ export function FlowInfographic() {
               </path>
               <polygon points="30,24 38,30 30,36" fill="#c45d3e" />
             </svg>
-            <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide text-center leading-tight">syncs<br/>instantly</span>
+            <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide text-center leading-tight">adjusts<br/>dashboard</span>
           </div>
           <div className="flex lg:hidden flex-col items-center justify-center py-2 gap-1">
             <svg width="100" height="24" viewBox="0 0 100 24" fill="none">
@@ -122,7 +122,7 @@ export function FlowInfographic() {
               </path>
               <polygon points="80,6 88,12 80,18" fill="#c45d3e" />
             </svg>
-            <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide">syncs instantly</span>
+            <span className="text-[8px] text-[#c45d3e] font-medium tracking-wide">adjusts dashboard</span>
           </div>
 
           {/* Dashboard — interactive demo */}
