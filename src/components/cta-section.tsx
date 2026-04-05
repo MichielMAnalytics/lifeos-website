@@ -31,7 +31,7 @@ export function CTASection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://app.lifeos.zone?auth=true"
+            href="https://app.lifeos.zone/sign-up"
             className={cn(
               buttonVariants({ size: "lg" }),
               "group rounded-lg text-xs font-medium px-8 gap-2 transition-transform duration-200 hover:scale-105"

@@ -157,7 +157,7 @@ function Hero1() {
             Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
           </p>
           <div className="mt-8 flex gap-3">
-            <a href="https://app.lifeos.zone?auth=true" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Try free for 7 days
             </a>
             <a href="#demo" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
@@ -189,7 +189,7 @@ function Hero2() {
             Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
           </p>
           <div className="mt-8 flex justify-center gap-3">
-            <a href="https://app.lifeos.zone?auth=true" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Try free for 7 days
             </a>
           </div>
@@ -228,7 +228,7 @@ function Hero3() {
             <p className="mt-5 text-base text-muted-foreground leading-relaxed">
               Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
             </p>
-            <a href="https://app.lifeos.zone?auth=true" className={cn(buttonVariants({ size: "lg" }), "mt-8 rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "mt-8 rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Start for free
             </a>
           </div>
@@ -255,7 +255,7 @@ function Hero4() {
           Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
         </p>
         <div className="mt-8 flex gap-3">
-          <a href="https://app.lifeos.zone?auth=true" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+          <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
             Try free for 7 days
           </a>
           <a href="#pricing" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
@@ -289,7 +289,7 @@ function Hero5() {
             Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
           </p>
           <div className="mt-8 flex gap-3">
-            <a href="https://app.lifeos.zone?auth=true" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2")}>
+            <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2")}>
               Get Started
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

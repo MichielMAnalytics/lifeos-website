@@ -77,10 +77,10 @@ export function Pricing() {
         {/* 3-tier pricing grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
 
-          {/* ── Dashboard ── */}
+          {/* ── LifeOS Home ── */}
           <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
             <h3 className="text-lg font-semibold">LifeOS Home</h3>
-            <p className="text-sm text-muted-foreground mt-1">Plan, track, and reflect</p>
+            <p className="text-sm text-muted-foreground mt-1">Dashboard only, bring your own AI</p>
 
             <div className="mt-5 flex items-baseline gap-2">
               <span className="text-4xl font-bold">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
@@ -90,7 +90,19 @@ export function Pricing() {
               <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
             )}
 
-            <ul className="mt-6 space-y-3 flex-1">
+            {/* Breakdown */}
+            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">LifeOS dashboard</span>
+                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">AI / LifeCoach</span>
+                <span className="text-muted-foreground text-xs">not included</span>
+              </div>
+            </div>
+
+            <ul className="mt-5 space-y-3 flex-1">
               {[
                 "Full home & all pages",
                 "CLI access",
@@ -106,7 +118,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone?plan=dashboard&auth=true"
+              href="https://app.lifeos.zone/sign-up?plan=dashboard"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -116,14 +128,14 @@ export function Pricing() {
             </a>
           </div>
 
-          {/* ── BYOK (recommended, middle) ── */}
+          {/* ── BYOK (recommended) ── */}
           <div className="rounded-lg border border-foreground/20 bg-surface-hover p-8 flex flex-col relative">
             <span className="absolute top-4 right-4 text-[10px] uppercase tracking-wider font-medium bg-foreground text-background px-2.5 py-1 rounded-full">
               Recommended
             </span>
 
             <h3 className="text-lg font-semibold">Bring Your Own Key</h3>
-            <p className="text-sm text-muted-foreground mt-1">Use your own Claude API key for AI</p>
+            <p className="text-sm text-muted-foreground mt-1">Use your own Claude API key</p>
 
             <div className="mt-5 flex items-baseline gap-2">
               <span className="text-4xl font-bold">&euro;{formatPrice(annual ? annualPrice(20) : 20)}</span>
@@ -133,11 +145,23 @@ export function Pricing() {
               <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
             )}
 
-            <ul className="mt-6 space-y-3 flex-1">
+            {/* Breakdown */}
+            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">LifeOS + LifeCoach</span>
+                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(20) : 20)}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-muted-foreground">AI costs</span>
+                <span className="text-muted-foreground text-xs">pay Claude directly</span>
+              </div>
+            </div>
+
+            <ul className="mt-5 space-y-3 flex-1">
               {[
-                "LifeCoach hosting & updates",
-                "No AI markup \u2014 pay Claude directly",
+                "No AI markup on usage",
                 "Telegram & Discord channels",
+                "Full control over AI costs",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm">
                   <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -149,7 +173,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone?plan=byok&auth=true"
+              href="https://app.lifeos.zone/sign-up?plan=byok"
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -159,7 +183,7 @@ export function Pricing() {
             </a>
           </div>
 
-          {/* ── Managed (right) ── */}
+          {/* ── Managed ── */}
           <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
             <h3 className="text-lg font-semibold">Managed</h3>
             <p className="text-sm text-muted-foreground mt-1">We handle everything for you</p>
@@ -202,11 +226,11 @@ export function Pricing() {
             </div>
             <p className="text-[11px] text-muted-foreground mt-2">Unused credits roll over monthly</p>
 
-            <ul className="mt-4 space-y-3 flex-1">
+            <ul className="mt-5 space-y-3 flex-1">
               {[
-                "Everything set up and ready to go",
                 "No API key needed",
                 "Telegram & Discord channels",
+                "Nothing to configure",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm">
                   <svg className="w-4 h-4 text-success shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -218,7 +242,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone?plan=managed&auth=true"
+              href="https://app.lifeos.zone/sign-up?plan=managed"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
