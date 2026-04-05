@@ -2699,10 +2699,10 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 px-3 py-2 bg-[#f5f0ea] border-t border-[#e4ddd4]">
-                <svg className="w-4 h-4 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+              <div className="flex items-center gap-3 px-4 py-2.5 bg-[#f5f0ea] border-t border-[#e4ddd4]">
+                <svg className="w-5 h-5 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
                 <span className="flex-1 text-[11px] text-[#8a7e72]">Write a message...</span>
-                <svg className="w-4 h-4 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+                <svg className="w-5 h-5 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
                 <svg className="w-5 h-5 text-[#8a7e72] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5"/></svg>
               </div>
             </div>

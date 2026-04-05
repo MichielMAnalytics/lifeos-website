@@ -38,7 +38,6 @@ export function Pricing() {
   const [selectedCredit, setSelectedCredit] = useState(0);
 
   const currentTier = creditTiers[selectedCredit];
-  const platformFee = 20;
 
   return (
     <section id="pricing" className="relative px-6 py-16 sm:py-20">
@@ -56,7 +55,7 @@ export function Pricing() {
             Try LifeOS free for 7 days
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Full access, no charge today. Pick what fits &mdash; you won&apos;t be charged until your trial ends.
+            Full access, no charge today. Pick what fits.
           </p>
         </div>
 
@@ -104,28 +103,11 @@ export function Pricing() {
               <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
             )}
 
-            {/* Breakdown */}
-            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Platform</span>
-                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(10) : 10)}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeCoach</span>
-                <span className="text-muted-foreground/50 text-xs">&mdash;</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">AI credits</span>
-                <span className="text-muted-foreground/50 text-xs">&mdash;</span>
-              </div>
-            </div>
-
-            {/* Features */}
-            <ul className="mt-5 space-y-2.5 flex-1 text-sm">
+            <ul className="mt-6 space-y-2.5 flex-1 text-sm">
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">CLI access</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Connect your own AI</span></li>
-              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">LifeCoach</span></li>
               <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">Telegram & Discord</span></li>
             </ul>
 
@@ -157,28 +139,11 @@ export function Pricing() {
               <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
             )}
 
-            {/* Breakdown */}
-            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Platform</span>
-                <span className="font-medium">included</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeCoach</span>
-                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(20) : 20)}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">AI credits</span>
-                <span className="text-muted-foreground text-xs">pay Claude directly</span>
-              </div>
-            </div>
-
-            {/* Features */}
-            <ul className="mt-5 space-y-2.5 flex-1 text-sm">
+            <ul className="mt-6 space-y-2.5 flex-1 text-sm">
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
-              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
-              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">No AI markup on usage</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">No AI markup</span></li>
               <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">AI credits included</span></li>
             </ul>
 
@@ -196,7 +161,7 @@ export function Pricing() {
           {/* ── Managed ── */}
           <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
             <h3 className="text-lg font-semibold">Managed</h3>
-            <p className="text-sm text-muted-foreground mt-1">We handle everything for you</p>
+            <p className="text-sm text-muted-foreground mt-1">We handle everything</p>
 
             <div className="mt-5 flex items-baseline gap-2">
               <span className="text-4xl font-bold">
@@ -208,42 +173,28 @@ export function Pricing() {
               <div className="text-[11px] text-muted-foreground mt-1">billed annually</div>
             )}
 
-            {/* Breakdown with credit dropdown */}
-            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 space-y-2 text-sm">
+            {/* Credit selector */}
+            <div className="mt-6 rounded-md border border-border bg-background/50 p-3 text-sm">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Platform</span>
-                <span className="font-medium">included</span>
+                <span className="text-muted-foreground">AI credits</span>
+                <select
+                  value={selectedCredit}
+                  onChange={(e) => setSelectedCredit(Number(e.target.value))}
+                  className="text-xs bg-muted/50 border border-border rounded px-1.5 py-0.5 text-foreground font-medium cursor-pointer focus:outline-none focus:ring-1 focus:ring-foreground/20"
+                >
+                  {creditTiers.map((tier, i) => (
+                    <option key={tier.credits} value={i}>
+                      {tier.label}
+                    </option>
+                  ))}
+                </select>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">LifeCoach</span>
-                <span className="font-medium">&euro;{formatPrice(annual ? annualPrice(platformFee) : platformFee)}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground flex items-center gap-1.5">
-                  AI credits
-                  <select
-                    value={selectedCredit}
-                    onChange={(e) => setSelectedCredit(Number(e.target.value))}
-                    className="text-xs bg-muted/50 border border-border rounded px-1.5 py-0.5 text-foreground font-medium cursor-pointer focus:outline-none focus:ring-1 focus:ring-foreground/20"
-                  >
-                    {creditTiers.map((tier, i) => (
-                      <option key={tier.credits} value={i}>
-                        {tier.label}
-                      </option>
-                    ))}
-                  </select>
-                </span>
-                <span className="font-medium">
-                  &euro;{formatPrice(annual ? annualPrice(currentTier.credits) : currentTier.credits)}
-                </span>
-              </div>
+              <p className="text-[11px] text-muted-foreground mt-1.5">Credits roll over monthly</p>
             </div>
-            <p className="text-[11px] text-muted-foreground mt-2">Unused credits roll over monthly</p>
 
-            {/* Features */}
-            <ul className="mt-4 space-y-2.5 flex-1 text-sm">
+            <ul className="mt-5 space-y-2.5 flex-1 text-sm">
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
-              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach (AI assistant)</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">AI credits included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Nothing to configure</span></li>
