@@ -112,7 +112,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone/sign-up?plan=dashboard"
+              href="https://app.lifeos.zone/signup?plan=dashboard"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -148,7 +148,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone/sign-up?plan=byok"
+              href="https://app.lifeos.zone/signup?plan=byok"
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -201,7 +201,7 @@ export function Pricing() {
             </ul>
 
             <a
-              href="https://app.lifeos.zone/sign-up?plan=managed"
+              href="https://app.lifeos.zone/signup?plan=managed"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"

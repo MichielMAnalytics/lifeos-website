@@ -2717,7 +2717,7 @@ export function Hero() {
             that sees the full picture.
           </p>
           <div className="animate-fade-up delay-5 mt-8 flex flex-col items-center gap-3">
-            <a href="https://app.lifeos.zone/sign-up" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-sm font-medium px-8")}>
+            <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-sm font-medium px-8")}>
               Try for free
             </a>
           </div>

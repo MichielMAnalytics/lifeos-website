@@ -72,7 +72,7 @@ export function Nav() {
             Login
           </a>
           <a
-            href="https://app.lifeos.zone/sign-up"
+            href="https://app.lifeos.zone/signup"
             className={cn(
               buttonVariants({ size: "sm" }),
               "rounded-lg text-xs font-medium"
