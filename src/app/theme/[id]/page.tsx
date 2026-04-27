@@ -46,7 +46,7 @@ function DashboardMockup({ dark = false, className = "" }: { dark?: boolean; cla
           <div className="text-[9px] uppercase tracking-wider mb-3" style={{ color: muted }}>Most Important Task</div>
           <div className="flex items-center gap-2">
             <div className="w-3.5 h-3.5 rounded-full border-2" style={{ borderColor: accent }} />
-            <span className="text-sm font-medium" style={{ color: text }}>Ship landing page for lifeos.zone</span>
+            <span className="text-sm font-medium" style={{ color: text }}>Ship landing page for lifeai.so</span>
           </div>
         </div>
         <div className="rounded-lg p-4 flex flex-col items-center justify-center" style={{ background: surface }}>
@@ -81,7 +81,7 @@ function DashboardMockup({ dark = false, className = "" }: { dark?: boolean; cla
           </div>
         </div>
         <div className="rounded-lg p-4" style={{ background: surface }}>
-          <div className="text-[9px] uppercase tracking-wider mb-3" style={{ color: muted }}>AI LifeCoach</div>
+          <div className="text-[9px] uppercase tracking-wider mb-3" style={{ color: muted }}>Life Coach</div>
           <div className="space-y-2">
             <div className="rounded-md px-3 py-2 text-[11px]" style={{ background: bg, color: muted }}>
               You have 3 tasks due today. Start with the landing page?
@@ -96,13 +96,13 @@ function DashboardMockup({ dark = false, className = "" }: { dark?: boolean; cla
   );
 }
 
-/* Chat mockup for AI LifeCoach side */
+/* Chat mockup for Life Coach side */
 function ChatMockup({ className = "" }: { className?: string }) {
   return (
     <div className={cn("w-full rounded-xl border border-border bg-card shadow-2xl overflow-hidden", className)}>
       <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
         <div className="w-2 h-2 rounded-full bg-green-400" />
-        <span className="text-[11px] font-medium text-foreground">AI LifeCoach</span>
+        <span className="text-[11px] font-medium text-foreground">Life Coach</span>
         <span className="text-[10px] text-muted-foreground ml-1">powered by OpenClaw</span>
       </div>
       <div className="p-4 space-y-3">
@@ -154,10 +154,10 @@ function Hero1() {
             of things?
           </h1>
           <p className="mt-6 text-base text-muted-foreground max-w-sm leading-relaxed">
-            Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
+            Tasks, goals, journals, ideas. All connected, with a Life Coach that sees the full picture.
           </p>
           <div className="mt-8 flex gap-3">
-            <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeai.so/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Try free for 7 days
             </a>
             <a href="#demo" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
@@ -186,10 +186,10 @@ function Hero2() {
             but never on top of things?
           </h1>
           <p className="mt-6 text-base text-muted-foreground max-w-md mx-auto leading-relaxed">
-            Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
+            Tasks, goals, journals, ideas. All connected, with a Life Coach that sees the full picture.
           </p>
           <div className="mt-8 flex justify-center gap-3">
-            <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeai.so/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Try free for 7 days
             </a>
           </div>
@@ -201,7 +201,7 @@ function Hero2() {
             <DashboardMockup />
           </div>
           <div className="lg:col-span-2">
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium mb-3">Your AI LifeCoach</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium mb-3">Your Life Coach</p>
             <ChatMockup />
           </div>
         </div>
@@ -226,9 +226,9 @@ function Hero3() {
               but never on top of things?
             </h1>
             <p className="mt-5 text-base text-muted-foreground leading-relaxed">
-              Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
+              Tasks, goals, journals, ideas. All connected, with a Life Coach that sees the full picture.
             </p>
-            <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "mt-8 rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+            <a href="https://app.lifeai.so/signup" className={cn(buttonVariants({ size: "lg" }), "mt-8 rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
               Start for free
             </a>
           </div>
@@ -252,10 +252,10 @@ function Hero4() {
           but never on top of things?
         </h1>
         <p className="mt-6 text-center text-base text-muted-foreground max-w-md leading-relaxed">
-          Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
+          Tasks, goals, journals, ideas. All connected, with a Life Coach that sees the full picture.
         </p>
         <div className="mt-8 flex gap-3">
-          <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
+          <a href="https://app.lifeai.so/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
             Try free for 7 days
           </a>
           <a href="#pricing" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8")}>
@@ -286,10 +286,10 @@ function Hero5() {
             but never on top of things?
           </h1>
           <p className="mt-6 text-base text-muted-foreground max-w-sm leading-relaxed">
-            Tasks, goals, journals, ideas. All connected, with an AI LifeCoach that sees the full picture.
+            Tasks, goals, journals, ideas. All connected, with a Life Coach that sees the full picture.
           </p>
           <div className="mt-8 flex gap-3">
-            <a href="https://app.lifeos.zone/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2")}>
+            <a href="https://app.lifeai.so/signup" className={cn(buttonVariants({ size: "lg" }), "rounded-lg text-xs uppercase tracking-wider font-medium px-8 gap-2")}>
               Get Started
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -310,7 +310,7 @@ function Hero5() {
             <DashboardMockup />
           </div>
           <div className="lg:col-span-2">
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium mb-3">Your AI LifeCoach</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium mb-3">Your Life Coach</p>
             <ChatMockup />
           </div>
         </div>
@@ -319,7 +319,7 @@ function Hero5() {
   );
 }
 
-/* Flow Infographic — visualizes data flow: Inputs → AI LifeCoach → Outputs */
+/* Flow Infographic — visualizes data flow: Inputs → Life Coach → Outputs */
 function FlowInfographic() {
   const inputs = ["Tasks", "Thoughts", "Ideas", "Journals", "Voice messages"];
   const outputs = ["Smart day plans", "Proactive reminders", "Goal tracking", "Weekly reviews", "Brainstorm sessions"];
@@ -327,9 +327,9 @@ function FlowInfographic() {
   return (
     <section className="w-full px-6 py-24 overflow-hidden">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-center text-2xl sm:text-3xl font-bold tracking-tight mb-4">How LifeOS works</h2>
+        <h2 className="text-center text-2xl sm:text-3xl font-bold tracking-tight mb-4">How LifeAI works</h2>
         <p className="text-center text-sm text-muted-foreground mb-16 max-w-md mx-auto">
-          Everything you capture flows through your AI LifeCoach and comes back as actionable insight.
+          Everything you capture flows through your Life Coach and comes back as actionable insight.
         </p>
 
         <div className="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-0">
@@ -373,7 +373,7 @@ function FlowInfographic() {
             </svg>
           </div>
 
-          {/* AI LifeCoach center box */}
+          {/* Life Coach center box */}
           <div className="flex items-center justify-center">
             <div
               className="relative rounded-xl bg-primary px-6 py-8 text-center shadow-lg"
@@ -381,7 +381,7 @@ function FlowInfographic() {
                 animation: "aiGlow 3s ease-in-out infinite",
               }}
             >
-              <div className="text-lg font-bold text-primary-foreground mb-1">AI LifeCoach</div>
+              <div className="text-lg font-bold text-primary-foreground mb-1">Life Coach</div>
               <div className="text-xs text-primary-foreground/70 mb-4">Powered by OpenClaw</div>
               <div className="text-[11px] text-primary-foreground/50 leading-relaxed max-w-[160px] mx-auto">
                 Parses &amp; understands your full context to generate personalized output

@@ -18,7 +18,7 @@ export function Footer() {
               <LogoFull />
               <div className="mt-6">
                 <a
-                  href="https://app.lifeos.zone/login"
+                  href="https://app.lifeai.so/login"
                   className={cn(
                     buttonVariants({ variant: "outline", size: "sm" }),
                     "rounded-lg text-xs font-medium"
@@ -52,13 +52,13 @@ export function Footer() {
               </div>
             </div>
 
-            {/* My LifeOS */}
+            {/* My LifeAI */}
             <div>
-              <h4 className="text-xs font-medium text-foreground mb-4">My LifeOS</h4>
+              <h4 className="text-xs font-medium text-foreground mb-4">My LifeAI</h4>
               <div className="flex flex-col gap-3">
-                <a href="https://app.lifeos.zone" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Dashboard</a>
-                <a href="https://app.lifeos.zone/settings" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Account Settings</a>
-                <a href="https://app.lifeos.zone" className="text-xs text-muted-foreground hover:text-foreground transition-colors">AI LifeCoach</a>
+                <a href="https://app.lifeai.so" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Dashboard</a>
+                <a href="https://app.lifeai.so/settings" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Account Settings</a>
+                <a href="https://app.lifeai.so" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Life Coach</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4 text-xs opacity-60">
-              <span>&copy; {new Date().getFullYear()} lifeos.zone</span>
+              <span>&copy; {new Date().getFullYear()} lifeai.so</span>
               <a href="/terms" className="hover:opacity-100 transition-opacity">Terms</a>
               <a href="/privacy" className="hover:opacity-100 transition-opacity">Privacy</a>
             </div>

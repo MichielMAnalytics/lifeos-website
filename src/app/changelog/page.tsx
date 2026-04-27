@@ -10,7 +10,7 @@ const entries = [
     version: "v1.2",
     title: "New pricing plans and website refresh",
     changes: [
-      "Introduced LifeOS Home, BYOK, and Managed pricing tiers",
+      "Introduced LifeAI Home, BYOK, and Managed pricing tiers",
       "Redesigned landing page with interactive dashboard demo",
       "Added Terms of Service and Privacy Policy pages",
     ],
@@ -20,7 +20,7 @@ const entries = [
     version: "v1.1",
     title: "Telegram and Discord channels",
     changes: [
-      "Connect your AI LifeCoach via Telegram or Discord",
+      "Connect your Life Coach via Telegram or Discord",
       "Voice note capture — send a voice message and it creates tasks, journal entries, and reminders",
       "Improved day plan generation with calendar awareness",
     ],
@@ -28,10 +28,10 @@ const entries = [
   {
     date: "February 10, 2026",
     version: "v1.0",
-    title: "LifeOS launch",
+    title: "LifeAI launch",
     changes: [
       "Full dashboard with tasks, goals, journal, and day plans",
-      "AI LifeCoach powered by Claude",
+      "Life Coach powered by Claude",
       "Quarterly goal tracking and reviews",
       "CLI access for power users",
       "BYOK support — bring your own Claude API key",
@@ -54,7 +54,7 @@ export default function ChangelogPage() {
                 What&apos;s new
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
-                The latest updates, improvements, and fixes to LifeOS.
+                The latest updates, improvements, and fixes to LifeAI.
               </p>
             </div>
 

@@ -12,7 +12,7 @@ export function FlowInfographic() {
             Configure everything through chat
           </h2>
           <p className="text-sm text-muted-foreground max-w-lg mx-auto">
-            Tell your AI LifeCoach how you want things. It adjusts your dashboard, workflow, and communication style to match.
+            Tell your Life Coach how you want things. It adjusts your dashboard, workflow, and communication style to match.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export function FlowInfographic() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1">
-                  <span className="text-[11px] font-semibold text-white">LifeOS Coach</span>
+                  <span className="text-[11px] font-semibold text-white">Life Coach</span>
                   <span className="text-[8px] bg-white/20 text-white/90 px-1 py-0.5 rounded font-medium">bot</span>
                 </div>
                 <span className="text-[9px] text-white/60">last seen recently</span>

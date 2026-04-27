@@ -34,7 +34,7 @@ const commands = [
     input: "lifeos search 'landing page' --type tasks,ideas",
     output: [
       "TASKS",
-      "  Ship landing page for lifeos.zone    [ TODO ]",
+      "  Ship landing page for lifeai.so      [ TODO ]",
       "IDEAS",
       "  Use tree animation on homepage       [ HIGH ]",
     ],
@@ -63,7 +63,7 @@ export function CLISection() {
             A command line for those who want it
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Prefer typing over clicking? LifeOS has a full command line interface.
+            Prefer typing over clicking? LifeAI has a full command line interface.
             Manage tasks, log journals, and run reviews — all from your terminal.
           </p>
         </div>

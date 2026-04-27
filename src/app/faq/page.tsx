@@ -11,25 +11,25 @@ const faqs = [
     category: "General",
     questions: [
       {
-        q: "What is LifeOS?",
-        a: "LifeOS is a personal productivity platform that unifies tasks, goals, projects, journals, day plans, weekly plans, ideas, thoughts, wins, resources, reminders, and reviews into one system. It comes with a visual dashboard, a CLI, and an API.",
+        q: "What is LifeAI?",
+        a: "LifeAI is a personal productivity platform that unifies tasks, goals, projects, journals, day plans, weekly plans, ideas, thoughts, wins, resources, reminders, and reviews into one system. It comes with a visual dashboard, a CLI, and an API.",
       },
       {
-        q: "Who is LifeOS for?",
-        a: "LifeOS is built for individuals — solopreneurs, developers, content creators, executives, or anyone who wants a single system to manage their personal productivity. It's not a team collaboration tool.",
+        q: "Who is LifeAI for?",
+        a: "LifeAI is built for individuals — solopreneurs, developers, content creators, executives, or anyone who wants a single system to manage their personal productivity. It's not a team collaboration tool.",
       },
       {
-        q: "Is LifeOS open source?",
-        a: "The core platform is open source. You can self-host it, extend it, and customize it. The hosted version on lifeos.zone includes managed infrastructure and the AI LifeCoach.",
+        q: "Is LifeAI open source?",
+        a: "The core platform is open source. You can self-host it, extend it, and customize it. The hosted version on lifeai.so includes managed infrastructure and the Life Coach.",
       },
     ],
   },
   {
-    category: "AI LifeCoach",
+    category: "Life Coach",
     questions: [
       {
-        q: "What is the AI LifeCoach?",
-        a: "The AI LifeCoach is powered by OpenClaw and has full context of your goals, tasks, journal, and plans. It can proactively remind you, suggest priorities, run reviews, and act as a personal productivity coach.",
+        q: "What is the Life Coach?",
+        a: "The Life Coach is powered by OpenClaw and has full context of your goals, tasks, journal, and plans. It can proactively remind you, suggest priorities, run reviews, and act as a personal productivity coach.",
       },
       {
         q: "What does BYOK mean?",
@@ -37,7 +37,7 @@ const faqs = [
       },
       {
         q: "How do I talk to the AI?",
-        a: "You can chat with your AI LifeCoach via Telegram, WhatsApp, the dashboard, or the CLI. Tasks and updates sync to your dashboard in real time.",
+        a: "You can chat with your Life Coach via Telegram, WhatsApp, the dashboard, or the CLI. Tasks and updates sync to your dashboard in real time.",
       },
       {
         q: "Can I configure how the AI behaves?",
@@ -58,7 +58,7 @@ const faqs = [
       },
       {
         q: "What's included in the Dashboard Only plan?",
-        a: "The full dashboard experience — all themes, personas, fonts, cloud sync, CLI, and API access. No AI LifeCoach. Perfect if you want the organizational system without the AI.",
+        a: "The full dashboard experience — all themes, personas, fonts, cloud sync, CLI, and API access. No Life Coach. Perfect if you want the organizational system without the AI.",
       },
     ],
   },
@@ -66,15 +66,15 @@ const faqs = [
     category: "Technical",
     questions: [
       {
-        q: "What tech stack does LifeOS use?",
+        q: "What tech stack does LifeAI use?",
         a: "Next.js 15 dashboard, Convex real-time backend, Commander.js CLI. TypeScript throughout. Bun as the package manager.",
       },
       {
-        q: "Can I self-host LifeOS?",
+        q: "Can I self-host LifeAI?",
         a: "Yes. Clone the repo, set up a Convex deployment, configure Google OAuth, and you're running. The full self-hosting guide is in the docs.",
       },
       {
-        q: "Does LifeOS work offline?",
+        q: "Does LifeAI work offline?",
         a: "The dashboard requires a connection for real-time sync. The CLI can queue commands for later sync. Offline-first mode is on the roadmap.",
       },
     ],
@@ -130,7 +130,7 @@ export default function FAQPage() {
                 Frequently asked questions
               </h1>
               <p className="mt-4 text-muted-foreground text-lg">
-                Everything you need to know about LifeOS.
+                Everything you need to know about LifeAI.
               </p>
             </div>
 

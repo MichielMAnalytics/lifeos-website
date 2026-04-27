@@ -131,7 +131,7 @@ function TypographyComparison() {
 /* ── 2. Borders & Shadows ── */
 
 function BorderShadowComparison() {
-  const features = ["Full dashboard & pages", "LifeCoach included", "Telegram & Discord"];
+  const features = ["Full dashboard & pages", "Life Coach included", "Telegram & Discord"];
 
   return (
     <Comparison
@@ -222,7 +222,7 @@ function SectionRhythmComparison() {
   const sections = [
     { title: "Features", desc: "Everything connects" },
     { title: "Use Cases", desc: "Built for how you actually work" },
-    { title: "Pricing", desc: "Try LifeOS free for 7 days" },
+    { title: "Pricing", desc: "Try LifeAI free for 7 days" },
   ];
 
   return (
@@ -281,7 +281,7 @@ function FontWeightComparison() {
             Feature label
           </div>
           <h4 className="text-xl font-bold text-[#2c2420] mb-2">
-            AI LifeCoach
+            Life Coach
           </h4>
           <p className="text-sm text-[#8a7e72] leading-relaxed mb-4">
             Your personal AI coach that knows your goals, tasks, and plans. Available 24/7 via chat.
@@ -303,7 +303,7 @@ function FontWeightComparison() {
             className="text-xl font-semibold text-[#2c2420] mb-2"
             style={{ letterSpacing: "-0.02em" }}
           >
-            AI LifeCoach
+            Life Coach
           </h4>
           <p className="text-sm text-[#2c2420]/75 leading-relaxed mb-4">
             Your personal AI coach that knows your goals, tasks, and plans. Available 24/7 via chat.
@@ -341,7 +341,7 @@ export default function DesignTweaksPage() {
               </h1>
               <p className="text-base text-[#8a7e72] max-w-xl leading-relaxed">
                 Before &amp; after comparisons of design refinements inspired by
-                Linear, Notion, and Vercel design systems. Applied to actual LifeOS components.
+                Linear, Notion, and Vercel design systems. Applied to actual LifeAI components.
               </p>
 
               {/* Quick nav */}

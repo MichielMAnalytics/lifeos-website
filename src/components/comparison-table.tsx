@@ -70,7 +70,7 @@ const features: FeatureRow[] = [
   },
 ];
 
-const competitors = ["LifeOS", "Notion", "Todoist", "Akiflow", "Obsidian"] as const;
+const competitors = ["LifeAI", "Notion", "Todoist", "Akiflow", "Obsidian"] as const;
 
 function Cell({ value }: { value: Support }) {
   if (value === "yes") {
@@ -101,10 +101,10 @@ export function ComparisonTable() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            How LifeOS compares
+            How LifeAI compares
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Other tools do parts of the job. LifeOS brings everything together
+            Other tools do parts of the job. LifeAI brings everything together
             with an AI coach that actually knows your life.
           </p>
         </div>
@@ -122,7 +122,7 @@ export function ComparisonTable() {
                     <th
                       key={name}
                       className={`py-4 px-4 text-center whitespace-nowrap ${
-                        name === "LifeOS"
+                        name === "LifeAI"
                           ? "text-primary bg-primary/5 font-semibold"
                           : "text-muted-foreground font-medium"
                       }`}

@@ -52,7 +52,7 @@ export function Pricing() {
             Pricing
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Try LifeOS free for 7 days
+            Try LifeAI free for 7 days
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
             Full access, no charge today. Pick what fits.
@@ -90,9 +90,9 @@ export function Pricing() {
         {/* 3-tier pricing grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
 
-          {/* ── LifeOS Home ── */}
+          {/* ── LifeAI Home ── */}
           <div className="rounded-lg border border-border bg-card p-8 flex flex-col">
-            <h3 className="text-lg font-semibold">LifeOS Home</h3>
+            <h3 className="text-lg font-semibold">LifeAI Home</h3>
             <p className="text-sm text-muted-foreground mt-1">Dashboard only</p>
 
             <div className="mt-5 flex items-baseline gap-2">
@@ -107,12 +107,12 @@ export function Pricing() {
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">CLI access</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Connect your own AI</span></li>
-              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">LifeCoach</span></li>
+              <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">Life Coach</span></li>
               <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">Telegram & Discord</span></li>
             </ul>
 
             <a
-              href="https://app.lifeos.zone/signup?plan=dashboard"
+              href="https://app.lifeai.so/signup?plan=dashboard"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -141,14 +141,14 @@ export function Pricing() {
 
             <ul className="mt-6 space-y-2.5 flex-1 text-sm">
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
-              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach included</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Life Coach included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">No AI markup</span></li>
               <li className="flex items-center gap-2"><DashIcon /><span className="text-muted-foreground/50">AI credits included</span></li>
             </ul>
 
             <a
-              href="https://app.lifeos.zone/signup?plan=byok"
+              href="https://app.lifeai.so/signup?plan=byok"
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"
@@ -194,14 +194,14 @@ export function Pricing() {
 
             <ul className="mt-5 space-y-2.5 flex-1 text-sm">
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Full dashboard & pages</span></li>
-              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">LifeCoach included</span></li>
+              <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Life Coach included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Telegram & Discord</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">AI credits included</span></li>
               <li className="flex items-center gap-2"><CheckIcon /><span className="text-foreground/80">Nothing to configure</span></li>
             </ul>
 
             <a
-              href="https://app.lifeos.zone/signup?plan=managed"
+              href="https://app.lifeai.so/signup?plan=managed"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "mt-8 w-full rounded-lg text-xs uppercase tracking-wider font-medium"

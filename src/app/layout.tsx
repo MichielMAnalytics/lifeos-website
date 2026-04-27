@@ -13,26 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LifeOS — Your Personal Life Operating System",
+  title: "LifeAI — Your Personal Life Operating System",
   description:
-    "A personal productivity platform with a configurable AI LifeCoach. Tasks, goals, projects, journals, day plans, and more — with a dashboard, CLI, and API.",
-  metadataBase: new URL("https://lifeos.zone"),
+    "A personal productivity platform with a configurable Life Coach. Tasks, goals, projects, journals, day plans, and more — with a dashboard, CLI, and API.",
+  metadataBase: new URL("https://lifeai.so"),
   icons: {
     icon: { url: "/favicon.svg", type: "image/svg+xml" },
   },
   openGraph: {
-    title: "LifeOS — Your Personal Life Operating System",
+    title: "LifeAI — Your Personal Life Operating System",
     description:
-      "A personal productivity platform with a configurable AI LifeCoach. Dashboard. CLI. API. Built for the way you think.",
-    url: "https://lifeos.zone",
-    siteName: "LifeOS",
+      "A personal productivity platform with a configurable Life Coach. Dashboard. CLI. API. Built for the way you think.",
+    url: "https://lifeai.so",
+    siteName: "LifeAI",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LifeOS — Your Personal Life Operating System",
+    title: "LifeAI — Your Personal Life Operating System",
     description:
-      "A personal productivity platform with a configurable AI LifeCoach. Dashboard. CLI. API.",
+      "A personal productivity platform with a configurable Life Coach. Dashboard. CLI. API.",
   },
 };
 

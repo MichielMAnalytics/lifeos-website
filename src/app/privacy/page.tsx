@@ -27,7 +27,7 @@ export default function PrivacyPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    LifeOS (lifeos.zone) is committed to protecting your privacy. This policy
+                    LifeAI (lifeai.so) is committed to protecting your privacy. This policy
                     explains what data we collect, how we use it, and what rights you have. We
                     process data in accordance with the General Data Protection Regulation (GDPR)
                     and applicable EU/Dutch privacy law.
@@ -55,14 +55,14 @@ export default function PrivacyPage() {
                     <h3 className="text-foreground font-medium mb-2">Content you create</h3>
                     <p>
                       This includes tasks, goals, projects, journal entries, day plans, weekly
-                      plans, ideas, notes, and any other data you enter into LifeOS. This data
+                      plans, ideas, notes, and any other data you enter into LifeAI. This data
                       is yours and is stored to provide you with the service.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-foreground font-medium mb-2">AI conversations</h3>
                     <p>
-                      When you use the AI LifeCoach, your messages and relevant context (such as
+                      When you use the Life Coach, your messages and relevant context (such as
                       tasks and goals) are processed to generate responses. Conversation history
                       is stored to maintain context across sessions.
                     </p>
@@ -88,9 +88,9 @@ export default function PrivacyPage() {
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>We use your data to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-1">
-                    <li>Provide and operate the LifeOS service</li>
+                    <li>Provide and operate the LifeAI service</li>
                     <li>Process your subscription and payments</li>
-                    <li>Power the AI LifeCoach with relevant context from your account</li>
+                    <li>Power the Life Coach with relevant context from your account</li>
                     <li>Send transactional emails (account confirmations, billing receipts)</li>
                     <li>Improve the service based on aggregated, anonymized usage patterns</li>
                     <li>Respond to support requests</li>
@@ -110,13 +110,13 @@ export default function PrivacyPage() {
                 </h2>
                 <div className="space-y-6 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    We use the following third-party services to operate LifeOS. Each has its
+                    We use the following third-party services to operate LifeAI. Each has its
                     own privacy policy:
                   </p>
                   <div>
                     <h3 className="text-foreground font-medium mb-2">Anthropic (Claude)</h3>
                     <p>
-                      The AI LifeCoach is powered by Claude, developed by Anthropic. When you
+                      The Life Coach is powered by Claude, developed by Anthropic. When you
                       use AI features, your prompts and relevant context are sent to
                       Anthropic&apos;s API. Anthropic does not use your data to train their
                       models when accessed via the API.
@@ -134,14 +134,14 @@ export default function PrivacyPage() {
                     <h3 className="text-foreground font-medium mb-2">Telegram & Discord</h3>
                     <p>
                       If you connect your Telegram or Discord account, messages you send through
-                      those platforms are processed to interact with your LifeOS account. We
-                      only access messages directed to the LifeOS bot.
+                      those platforms are processed to interact with your LifeAI account. We
+                      only access messages directed to the LifeAI bot.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-foreground font-medium mb-2">Convex</h3>
                     <p>
-                      LifeOS uses Convex as its real-time backend. Your data is stored on
+                      LifeAI uses Convex as its real-time backend. Your data is stored on
                       Convex&apos;s infrastructure with encryption at rest and in transit.
                     </p>
                   </div>

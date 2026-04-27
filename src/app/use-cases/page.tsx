@@ -74,7 +74,7 @@ export default function UseCasesPage() {
               actually work
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              LifeOS fits into your life, not the other way around. Here is how
+              LifeAI fits into your life, not the other way around. Here is how
               people use it every day to stay focused, organized, and intentional.
             </p>
           </div>

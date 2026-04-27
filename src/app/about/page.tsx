@@ -25,7 +25,7 @@ export default function AboutPage() {
               take their life seriously
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              LifeOS started as a personal tool — a way to unify tasks, goals, journals,
+              LifeAI started as a personal tool — a way to unify tasks, goals, journals,
               and plans into one system that actually works the way your brain does.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
                   [ THE SOLUTION ]
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  LifeOS is a single system where everything connects. Your tasks roll up
+                  LifeAI is a single system where everything connects. Your tasks roll up
                   to projects, projects map to goals, goals inform your weekly plan, and your
                   daily journal captures what actually happened. One source of truth.
                   Dashboard for visual people. CLI for terminal people. API for automation people.
@@ -103,7 +103,7 @@ export default function AboutPage() {
                   [ THE TEAM ]
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  LifeOS is built by a small team of people who use it every day.
+                  LifeAI is built by a small team of people who use it every day.
                   We build what we need, ship what works, and iterate based on real usage —
                   not feature requests from people who won&apos;t use them.
                 </p>

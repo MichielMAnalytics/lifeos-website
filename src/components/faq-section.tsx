@@ -5,28 +5,28 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    q: "What is LifeOS?",
-    a: "A personal productivity platform that brings your tasks, goals, journals, day plans, and ideas into one place. With an AI LifeCoach that has full context on everything.",
+    q: "What is LifeAI?",
+    a: "A personal productivity platform that brings your tasks, goals, journals, day plans, and ideas into one place. With a Life Coach that has full context on everything.",
   },
   {
-    q: "What is the AI LifeCoach?",
+    q: "What is the Life Coach?",
     a: "Your personal AI coach powered by OpenClaw. It knows your goals, tasks, and plans. It can proactively remind you, help you brainstorm, run reviews, and keep you on track.",
   },
   {
-    q: "How do I talk to the AI LifeCoach?",
+    q: "How do I talk to the Life Coach?",
     a: "Via Telegram, WhatsApp, the dashboard, or the CLI. Send a voice message, type a task, or have a full conversation. Everything syncs to your dashboard instantly.",
   },
   {
     q: "What does Bring Your Own Key mean?",
-    a: "You connect your own Claude API key. You only pay for what you use directly to the AI provider. The subscription covers hosting your personal AI LifeCoach.",
+    a: "You connect your own Claude API key. You only pay for what you use directly to the AI provider. The subscription covers hosting your personal Life Coach.",
   },
   {
     q: "Can I try it for free?",
     a: "Yes. Every plan comes with a free trial.",
   },
   {
-    q: "Is LifeOS open source?",
-    a: "The core platform is open source. You can self-host it and customize it. The hosted version on lifeos.zone includes managed infrastructure and the AI LifeCoach.",
+    q: "Is LifeAI open source?",
+    a: "The core platform is open source. You can self-host it and customize it. The hosted version on lifeai.so includes managed infrastructure and the Life Coach.",
   },
 ];
 

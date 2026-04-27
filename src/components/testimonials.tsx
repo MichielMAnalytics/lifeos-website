@@ -16,7 +16,7 @@ const testimonials = [
     name: "Sarah Chen",
     role: "Solopreneur",
     quote:
-      "I used to juggle Notion, Todoist, and a paper journal. LifeOS replaced all three. The AI LifeCoach actually understands my priorities.",
+      "I used to juggle Notion, Todoist, and a paper journal. LifeAI replaced all three. The Life Coach actually understands my priorities.",
   },
   {
     name: "Marcus Rivera",
@@ -40,7 +40,7 @@ const testimonials = [
     name: "Emma Larsson",
     role: "Graduate Student",
     quote:
-      "LifeOS helps me balance coursework, research, and life. The daily journal and smart day plans keep me sane during exam season.",
+      "LifeAI helps me balance coursework, research, and life. The daily journal and smart day plans keep me sane during exam season.",
   },
 ];
 

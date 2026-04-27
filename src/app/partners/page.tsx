@@ -21,10 +21,10 @@ export default function PartnersPage() {
               Partnership Program
             </Badge>
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
-              Grow with LifeOS
+              Grow with LifeAI
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Earn recurring commissions by referring users to LifeOS.
+              Earn recurring commissions by referring users to LifeAI.
               Whether you&apos;re a content creator, coach, or community leader — we&apos;d love to work with you.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function PartnersPage() {
                   {[
                     { step: "1", title: "Apply", description: "Fill out a quick form telling us about your audience" },
                     { step: "2", title: "Get your link", description: "Receive a unique referral link and tracking dashboard" },
-                    { step: "3", title: "Share", description: "Share LifeOS with your audience through content, coaching, or community" },
+                    { step: "3", title: "Share", description: "Share LifeAI with your audience through content, coaching, or community" },
                     { step: "4", title: "Earn", description: "Get 20% recurring commission on every subscription from your referrals" },
                   ].map((step) => (
                     <div key={step.step} className="flex items-start gap-4 rounded-lg border border-border bg-card p-5">

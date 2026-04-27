@@ -25,13 +25,13 @@ export function CTASection() {
           Try it free for 7 days
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-          Get the full LifeOS experience: dashboard, AI
+          Get the full LifeAI experience: dashboard, AI
           assistant, and all features included. Cancel anytime.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://app.lifeos.zone/signup"
+            href="https://app.lifeai.so/signup"
             className={cn(
               buttonVariants({ size: "lg" }),
               "group rounded-lg text-xs font-medium px-8 gap-2 transition-transform duration-200 hover:scale-105"

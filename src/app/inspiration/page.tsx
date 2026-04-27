@@ -13,7 +13,7 @@ export default function InspirationPage() {
           <h1 className="text-4xl font-bold mb-2">Design Pattern Showcase</h1>
           <p className="text-lg" style={{ color: "var(--muted-foreground)" }}>
             Interactive examples of design patterns from top product websites.
-            Internal reference for the LifeOS team.
+            Internal reference for the LifeAI team.
           </p>
         </header>
 
@@ -151,7 +151,7 @@ function ExpandOnHoverButton() {
               transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
             }}
           >
-            Try LifeOS
+            Try LifeAI
           </button>
 
           {/* Variation 3: Border reveal */}
@@ -245,7 +245,7 @@ function GradientTextHeadline() {
 
 const testimonials = [
   {
-    quote: "LifeOS replaced five apps for me. I finally have one place for my goals, habits, and daily plans.",
+    quote: "LifeAI replaced five apps for me. I finally have one place for my goals, habits, and daily plans.",
     name: "Sarah Chen",
     role: "Product Designer at Figma",
   },
@@ -255,7 +255,7 @@ const testimonials = [
     role: "Senior Engineer at Stripe",
   },
   {
-    quote: "I have tried every productivity app out there. LifeOS is the first one that actually fits how I think.",
+    quote: "I have tried every productivity app out there. LifeAI is the first one that actually fits how I think.",
     name: "Priya Sharma",
     role: "Freelance Writer",
   },
@@ -463,7 +463,7 @@ function ComparisonToggle() {
   const [showAfter, setShowAfter] = useState(false);
 
   const before = {
-    title: "Before LifeOS",
+    title: "Before LifeAI",
     items: [
       "Tasks scattered across 5 apps",
       "No clear daily plan",
@@ -473,7 +473,7 @@ function ComparisonToggle() {
   };
 
   const after = {
-    title: "After LifeOS",
+    title: "After LifeAI",
     items: [
       "Everything in one system",
       "AI-generated daily plans",

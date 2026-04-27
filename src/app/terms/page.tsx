@@ -27,11 +27,11 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    By accessing or using LifeOS (lifeos.zone), you agree to be bound by these
+                    By accessing or using LifeAI (lifeai.so), you agree to be bound by these
                     Terms of Service. If you do not agree to these terms, do not use the service.
                   </p>
                   <p>
-                    These terms constitute a legal agreement between you and LifeOS. By creating
+                    These terms constitute a legal agreement between you and LifeAI. By creating
                     an account, you confirm that you are at least 16 years of age and capable of
                     entering into a binding agreement.
                   </p>
@@ -47,9 +47,9 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    LifeOS is a personal productivity platform that provides task management,
+                    LifeAI is a personal productivity platform that provides task management,
                     goal tracking, journaling, day and weekly planning, project management, and
-                    an AI-powered LifeCoach. The service is available through a web dashboard,
+                    a Life Coach. The service is available through a web dashboard,
                     CLI, API, and messaging integrations (Telegram, Discord).
                   </p>
                   <p>
@@ -88,7 +88,7 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    LifeOS offers paid subscription plans billed in EUR. All plans include a
+                    LifeAI offers paid subscription plans billed in EUR. All plans include a
                     7-day free trial. You will not be charged until the trial period ends.
                   </p>
                   <p>
@@ -117,8 +117,8 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    The AI LifeCoach feature is powered by Claude, developed by Anthropic. When
-                    you interact with the AI LifeCoach, your prompts and relevant context (tasks,
+                    The Life Coach feature is powered by Claude, developed by Anthropic. When
+                    you interact with the Life Coach, your prompts and relevant context (tasks,
                     goals, journal entries) are sent to Anthropic&apos;s API to generate responses.
                   </p>
                   <p>
@@ -169,17 +169,17 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-foreground/80 text-sm leading-relaxed">
                   <p>
-                    The LifeOS name, logo, and branding are the property of LifeOS. The service
+                    The LifeAI name, logo, and branding are the property of LifeAI. The service
                     design, code, and documentation are protected by intellectual property laws.
                   </p>
                   <p>
-                    You retain full ownership of all content you create within LifeOS, including
+                    You retain full ownership of all content you create within LifeAI, including
                     tasks, journal entries, goals, and notes. We claim no ownership over your
                     data.
                   </p>
                   <p>
-                    Portions of the LifeOS platform are open source and licensed under their
-                    respective licenses. These terms apply to the hosted service at lifeos.zone.
+                    Portions of the LifeAI platform are open source and licensed under their
+                    respective licenses. These terms apply to the hosted service at lifeai.so.
                   </p>
                 </div>
               </div>
@@ -219,13 +219,13 @@ export default function TermsPage() {
                     uninterrupted, secure, or error-free.
                   </p>
                   <p>
-                    To the maximum extent permitted by law, LifeOS shall not be liable for any
+                    To the maximum extent permitted by law, LifeAI shall not be liable for any
                     indirect, incidental, special, consequential, or punitive damages, or any
                     loss of profits or data, arising from your use of the service.
                   </p>
                   <p>
                     Our total liability for any claim arising from these terms or your use of
-                    the service shall not exceed the amount you paid to LifeOS in the 12 months
+                    the service shall not exceed the amount you paid to LifeAI in the 12 months
                     preceding the claim.
                   </p>
                 </div>

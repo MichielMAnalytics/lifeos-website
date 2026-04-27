@@ -14,7 +14,7 @@ export function DemoSection() {
             See it in action
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Message your AI LifeCoach on Telegram or WhatsApp — it captures tasks, updates
+            Message your Life Coach on Telegram or WhatsApp — it captures tasks, updates
             goals, and syncs everything to your dashboard in real time.
           </p>
         </div>
@@ -38,7 +38,7 @@ export function DemoSection() {
                 Demo video coming soon
               </p>
               <p className="mt-2 text-[11px] text-muted-foreground/50 italic">
-                Demo: Interactive preview of the LifeOS dashboard + AI LifeCoach conversation
+                Demo: Interactive preview of the LifeAI dashboard + Life Coach conversation
               </p>
             </div>
 

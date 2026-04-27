@@ -30,7 +30,7 @@ export function EmailSignup() {
           Ready to take control?
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-md mx-auto">
-          Try LifeOS free for 7 days.
+          Try LifeAI free for 7 days.
         </p>
 
         {submitted ? (
@@ -66,7 +66,7 @@ export function EmailSignup() {
             </div>
 
             <a
-              href="https://app.lifeos.zone/signup"
+              href="https://app.lifeai.so/signup"
               className={cn(
                 buttonVariants({ size: "lg" }),
                 "rounded-lg text-xs font-medium px-8 gap-2"

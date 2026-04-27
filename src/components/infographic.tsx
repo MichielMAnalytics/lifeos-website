@@ -12,7 +12,7 @@ export function Infographic() {
             Two sides, one system
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            LifeOS has two parts: a personal homepage to organize your life, and
+            LifeAI has two parts: a personal homepage to organize your life, and
             an AI life coach that helps you stay on track.
           </p>
         </div>
@@ -25,7 +25,7 @@ export function Infographic() {
               Infographic coming soon
             </p>
             <p className="text-xs text-muted-foreground/60 leading-relaxed">
-              Infographic showing the two sides of LifeOS: (1) The personal homepage — tasks, goals, journals, day plans, projects, ideas (2) The AI LifeCoach — powered by OpenClaw, knows your full context, available on Telegram/WhatsApp/web
+              Infographic showing the two sides of LifeAI: (1) The personal homepage — tasks, goals, journals, day plans, projects, ideas (2) The Life Coach — powered by OpenClaw, knows your full context, available on Telegram/WhatsApp/web
             </p>
           </div>
         </div>

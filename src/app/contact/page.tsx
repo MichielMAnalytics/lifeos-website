@@ -27,7 +27,7 @@ export default function ContactPage() {
               <div className="rounded-xl border border-border bg-card p-8">
                 <h2 className="text-lg font-semibold mb-2">General inquiries</h2>
                 <p className="text-sm text-muted-foreground mb-4">
-                  For questions about LifeOS, pricing, or anything else.
+                  For questions about LifeAI, pricing, or anything else.
                 </p>
                 <a href="mailto:info@lifeos.zone" className="text-sm text-primary hover:underline font-medium">
                   info@lifeos.zone
@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div className="rounded-xl border border-border bg-card p-8">
                 <h2 className="text-lg font-semibold mb-2">Partnerships</h2>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Interested in integrating with LifeOS or joining the partner program?
+                  Interested in integrating with LifeAI or joining the partner program?
                 </p>
                 <a href="/partners" className="text-sm text-primary hover:underline font-medium">
                   View partner program

@@ -60,19 +60,19 @@ export function Nav() {
         {/* Right: App, Login, Try for free */}
         <div className="flex items-center gap-5 ml-auto">
           <a
-            href="https://app.lifeos.zone"
+            href="https://app.lifeai.so"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
           >
             App
           </a>
           <a
-            href="https://app.lifeos.zone/login"
+            href="https://app.lifeai.so/login"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hidden sm:block"
           >
             Login
           </a>
           <a
-            href="https://app.lifeos.zone/signup"
+            href="https://app.lifeai.so/signup"
             className={cn(
               buttonVariants({ size: "sm" }),
               "rounded-lg text-xs font-medium"
