@@ -27,7 +27,7 @@ function CustomizeBehaviorMockup() {
     <div className="w-full rounded-xl border border-border bg-card shadow-2xl overflow-hidden">
       <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
         <div className="w-2 h-2 rounded-full bg-green-400" />
-        <span className="text-[11px] font-medium text-foreground">AI LifeCoach</span>
+        <span className="text-[11px] font-medium text-foreground">Life Coach</span>
         <span className="text-[10px] text-muted-foreground ml-auto">Customize behavior</span>
       </div>
       <div className="p-4 space-y-3">
@@ -121,7 +121,7 @@ function CustomizeDashboardMockup() {
     <div className="w-full rounded-xl border border-border bg-card shadow-2xl overflow-hidden">
       <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
         <div className="w-2 h-2 rounded-full bg-green-400" />
-        <span className="text-[11px] font-medium text-foreground">AI LifeCoach</span>
+        <span className="text-[11px] font-medium text-foreground">Life Coach</span>
         <span className="text-[10px] text-muted-foreground ml-auto">Customize dashboard</span>
       </div>
       <div className="p-4 space-y-3">
@@ -169,7 +169,7 @@ export function ThemesSection() {
             Your system, your way
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Tell your AI LifeCoach how you want things. It adjusts your dashboard,
+            Tell your Life Coach how you want things. It adjusts your dashboard,
             communication style, and workflow to match.
           </p>
         </div>

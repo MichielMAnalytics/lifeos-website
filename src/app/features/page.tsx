@@ -62,7 +62,7 @@ const features = [
     ),
   },
   {
-    title: "AI LifeCoach",
+    title: "Life Coach",
     badge: "CONFIGURE",
     description:
       "A fully configurable AI that knows your goals, tasks, and context. Powered by OpenClaw, you can bring your own keys or use included credits. Ask it to plan your day, brainstorm ideas, review your progress, or help you think through tough decisions with full awareness of your system.",
